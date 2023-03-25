@@ -1,4 +1,4 @@
-type: SolarGenerator
+type: ItemSource
 size: 1
 requirements: [
   lead/25000
