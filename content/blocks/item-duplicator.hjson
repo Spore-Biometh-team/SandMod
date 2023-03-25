@@ -7,7 +7,3 @@ requirements: [
   metaglass/75000
 ]
 category: distribution
-research:{
-  parent: solar-panel
-  researchCostMultiplier: 10
-}
