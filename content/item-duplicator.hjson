@@ -1,9 +1,13 @@
-name: item-duplicator
-type: ItemSource
+type: SolarGenerator
 size: 1
+powerProduction: 3
 requirements: [
-  lead/25000
-  silicon/75000
-  metaglass/125000
+  lead/250
+  silicon/75
+  spore-pod/50
 ]
 category: distribution
+research:{
+  parent: solar-panel
+  researchCostMultiplier: 10
+}
