@@ -1,4 +1,4 @@
-type: SolarGenerator
+type: ItemSource
 size: 1
 powerProduction: 3
 requirements: [
