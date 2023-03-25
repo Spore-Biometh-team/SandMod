@@ -1,0 +1,7 @@
+type: ItemSource
+name: testing
+requirements: [
+  lead/50000
+  silicon/25000
+  metaglass/70000
+]
