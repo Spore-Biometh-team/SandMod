@@ -1,10 +1,10 @@
+name: Creative mode
 type: ItemSource
 size: 1
-powerProduction: 3
 requirements: [
-  lead/250
-  silicon/75
-  spore-pod/50
+  lead/125000
+  silicon/75000
+  metaglass/75000
 ]
 category: distribution
 research:{
