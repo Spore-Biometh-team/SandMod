@@ -1,5 +1,7 @@
 type: ItemSource
+health: 10000
 name: testing
+description: I gregged
 requirements: [
   lead/50000
   silicon/25000
