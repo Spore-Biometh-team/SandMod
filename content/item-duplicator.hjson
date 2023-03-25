@@ -1,10 +1,8 @@
-type: ItemSource
-health: 10000
-name: testing
-description: I gregged
+type: SolarGenerator
+size: 1
 requirements: [
-  lead/50000
-  silicon/25000
-  metaglass/70000
+  lead/25000
+  silicon/75000
+  metaglass/125000
 ]
 category: distribution
