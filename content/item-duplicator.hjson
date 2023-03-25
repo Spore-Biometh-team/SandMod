@@ -1,4 +1,4 @@
-type: ItemSource
+type: PowerSource
 name: testing
 requirements: [
   lead/50000
