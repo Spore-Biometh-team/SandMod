@@ -6,3 +6,7 @@ requirements: [
   metaglass/75000
 ]
 category: distribution
+research:{
+  parent: disassembler
+  researchCostMultiplier: 25
+}
