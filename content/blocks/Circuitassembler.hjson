@@ -1,13 +1,11 @@
 type: multicraft.MultiCrafter
-category: crafting
-health: 850
+health: 2175
+itemCapacity: 50
 size: 2
-liquidCapacity: 10
-itemCapacity: 10
 recipes: 
 [
 {
-  input: ozone/1.5
+  input: water/1.5
   output: {
     items: [
       copper/1
@@ -20,14 +18,33 @@ recipes:
 {
   input: {
     items: [
-      sand-NAND/1
+      coppper/1 
+      lead          
     ]
   }
   output: {
-    items: [
-      sand-Circuit/1   
+    fluids: [
+      water/1.2    
     ]
   }
   craftTime: 210.0
 }
 ]
+category: crafting
+craftTime: 80
+research:{
+  parent: sporepod-BioSynthesizer
+  researchCostMultiplier: 2.5
+}
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawGlowRegion
+      suffix: -glow
+      blending: additive
+      color: 00ff00
+    }
+  ]
+}
