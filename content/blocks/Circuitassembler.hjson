@@ -1,6 +1,6 @@
 type: multicraft.MultiCrafter
 category: crafting
-health:850
+health: 850
 size: 2
 liquidCapacity: 10
 itemCapacity: 10
@@ -31,14 +31,3 @@ recipes:
   craftTime: 210.0
 }
 ]
-drawer: {
-  type: DrawMulti
-  drawers: [
-    {
-      type: DrawGlowRegion
-      suffix: -glow
-      blending: additive
-      color: 00ff00
-    }
-  ]
-}
