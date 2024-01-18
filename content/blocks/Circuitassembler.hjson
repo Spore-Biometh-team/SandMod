@@ -19,18 +19,15 @@ recipes:
 }}
 {
   input: {
-    items: [
-      copper/45 
-      lead/75
+  items: [
+      copper/100
+      lead/45
     ]
-  }
   output: {
-    items [
-      sand-Circuit/1    
-    ]
+    items: [sand-Circuit/1]
   }
-  craftTime: 240
-}
+  craftTime: 250.0
+}}
 ]
 drawer: {
   type: DrawMulti
