@@ -7,17 +7,16 @@ itemCapacity: 10
 recipes: 
 [
 {
-  input: items: [
+  input: {
+  items: [
       copper/100
-      graphite/250
       lead/45
-      silicon/65
     ]
   output: {
     items: [sand-NAND/1]
   }
   craftTime: 250.0
-}
+}}
 {
   input: {
     items: [
