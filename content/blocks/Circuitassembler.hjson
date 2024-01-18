@@ -7,24 +7,25 @@ itemCapacity: 10
 recipes: 
 [
 {
-  input: {items:[lead/40 copper/50]}
+  input: ozone/1.5
   output: {
     items: [
-      sand-Circuit/1
+      copper/1
+      graphite/2
     ]
+    power: 2.5
   }
   craftTime: 250.0
 }
 {
   input: {
     items: [
-      copper/100
-      lead/100
+      sand-NAND/1
     ]
   }
   output: {
     items: [
-      sand-NAND    
+      sand-Circuit/1   
     ]
   }
   craftTime: 210.0
