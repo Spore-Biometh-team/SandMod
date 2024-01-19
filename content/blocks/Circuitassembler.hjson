@@ -16,10 +16,6 @@ recipes:
 ]
 category: crafting
 craftTime: 80
-research:{
-  parent: sporepod-BioSynthesizer
-  researchCostMultiplier: 2.5
-}
 
 drawer: {
   type: DrawMulti

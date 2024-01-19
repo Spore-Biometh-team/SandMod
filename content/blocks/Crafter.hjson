@@ -5,7 +5,12 @@ size: 2
 recipes: 
 [
 {
-  input:  { items:[copper/75 lead/45 surge-alloy/5]}
+  input:  { 
+    items:[
+        copper/75 
+        lead/45 
+        surge-alloy/4
+        ]}
   output: {
     items: [
       sand-Resistor/1
@@ -25,10 +30,6 @@ recipes:
 ]
 category: crafting
 craftTime: 80
-research:{
-  parent: sporepod-BioSynthesizer
-  researchCostMultiplier: 2.5
-}
 requirements: [
   copper/250
   graphite/50
