@@ -5,13 +5,11 @@ size: 2
 recipes: 
 [
 {
-  input: water/1.5
+  input:  { liquids:[water/1.5] items:[copper/100] power:0.5}
   output: {
     items: [
-      copper/1
-      graphite/2
+      sand-Circuit/1
     ]
-    power: 2.5
   }
   craftTime: 250.0
 }
