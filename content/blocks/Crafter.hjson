@@ -34,3 +34,6 @@ requirements: [
   copper/250
   graphite/50
 ]
+research:{
+  parent: core-shard
+}
