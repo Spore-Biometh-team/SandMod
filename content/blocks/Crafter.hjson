@@ -5,13 +5,13 @@ size: 2
 recipes: 
 [
 {
-  input:  { items:[copper/75 lead/45 surge/5]}
+  input:  { items:[copper/75 lead/45 surge-alloy/5]}
   output: {
     items: [
       sand-Resistor/1
     ]
   }
-  craftTime: 300
+  craftTime: 600
 }
 {
   input:  { items:[sand-Resistor/4]}
@@ -20,7 +20,7 @@ recipes:
       sand-Circuit/1
     ]
   }
-  craftTime: 300
+  craftTime: 600
 }
 ]
 category: crafting
@@ -31,4 +31,5 @@ research:{
 }
 requirements: [
   copper/250
+  graphite/50
 ]
