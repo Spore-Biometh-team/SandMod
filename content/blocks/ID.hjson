@@ -1,9 +1,10 @@
 type: ItemSource
 size: 1
 requirements: [
-  lead/125000
-  silicon/75000
-  metaglass/75000
+  lead/1250000
+  silicon/750000
+  metaglass/750000
+  sand-Circuit/175000
 ]
 category: distribution
 research:{

@@ -1,5 +1,7 @@
 health:50
-power:0.5
+consumes: {
+power: 0.5
+}
 requirements: [
   copper/850
   lead/450

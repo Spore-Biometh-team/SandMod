@@ -1,5 +1,7 @@
 health:70
+consumes: {
 power: 1
+}
 requirements: [
   graphite/1100
   lead/450
