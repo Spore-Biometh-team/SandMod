@@ -1,7 +1,10 @@
-health:69
-
+health:50
+power:0.5
 requirements: [
   copper/850
+  lead/450
+  graphite/50
   sand-Circuit/3
   sand-Crotor/1
 ]
+drillTime: 400
