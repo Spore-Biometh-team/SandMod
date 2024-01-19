@@ -25,6 +25,9 @@ drawer: {
   type: DrawMulti
   drawers: [
     {
+      type: DrawDefault
+    }
+    {
       type: DrawGlowRegion
       suffix: -glow
       blending: additive
