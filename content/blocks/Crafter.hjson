@@ -1,17 +1,26 @@
 type: multicraft.MultiCrafter
-health: 2175
+health: 450
 itemCapacity: 50
 size: 2
 recipes: 
 [
 {
-  input:  { items:[sand-Resistor/1 ] power:0.5}
+  input:  { items:[copper/75 lead/45 surge/5]}
   output: {
     items: [
-      sand-Circuit/2
+      sand-Resistor/1
     ]
   }
-  craftTime: 250.0
+  craftTime: 300
+}
+{
+  input:  { items:[sand-Resistor/4]}
+  output: {
+    items: [
+      sand-Circuit/1
+    ]
+  }
+  craftTime: 300
 }
 ]
 category: crafting
@@ -33,7 +42,5 @@ drawer: {
   ]
 }
 requirements: [
-  lead/1250
-  sand-Circuit/3
-  metaglass/750
+  copper/250
 ]
