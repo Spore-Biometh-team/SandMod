@@ -29,18 +29,6 @@ research:{
   parent: sporepod-BioSynthesizer
   researchCostMultiplier: 2.5
 }
-
-drawer: {
-  type: DrawMulti
-  drawers: [
-    {
-      type: DrawGlowRegion
-      suffix: -glow
-      blending: additive
-      color: 00ff00
-    }
-  ]
-}
 requirements: [
   copper/250
 ]
