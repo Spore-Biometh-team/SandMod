@@ -8,7 +8,7 @@ recipes:
   input:  { 
     items:[
       sand-Resistor/2
-      sand-Tube/2
+      sand-Vacc/2
       ] 
       power:0.5}
   output: {
