@@ -27,6 +27,15 @@ recipes:
   }
   craftTime: 600
 }
+{
+  input:  { items:[metaglass/16]}
+  output: {
+    items: [
+      sand-Tube/6
+    ]
+  }
+  craftTime: 1200
+}
 ]
 category: crafting
 craftTime: 80
