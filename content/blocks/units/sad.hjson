@@ -1,0 +1,23 @@
+type: Reconstructor
+requirements: [
+sand-Circuit/5
+sand-Silisteel/25
+copper/450
+lead/450
+]
+category: units
+size: 3
+consumes: {
+power: 5
+items: [
+silicon/450
+sand-Healr/5
+sand-Buldr/5
+]
+}
+constructTime: 1500
+upgrades: [
+[retusa, oxynoe]
+[mono, poly]
+[nova, pulsar]
+]

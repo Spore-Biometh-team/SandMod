@@ -3,6 +3,5 @@ requirements: [
   lead/150
   copper/150
   sand-Circuit/5
-  sand-Healr/1
 ]
 health:69

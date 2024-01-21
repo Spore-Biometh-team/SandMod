@@ -67,7 +67,7 @@ recipes:
     items:[
       silicon/16
       sand-Iron/2
-      Pyratite/5   
+      pyratite/5   
       ]}
   output: {
     items: [
