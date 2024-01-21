@@ -48,6 +48,19 @@ recipes:
   craftTime: 1800
 }
 {
+  input:  { 
+    items:[
+      sand-Circuit/1
+      sand-Resistor/̀2
+      Silisteel/5      ]}
+  output: {
+    items: [
+      sand-Buldr/1
+    ]
+  }
+  craftTime: 1800
+}
+{
   input:  { items:[metaglass/16]}
   output: {
     items: [

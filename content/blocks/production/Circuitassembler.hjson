@@ -41,6 +41,6 @@ drawer: {
 }
 requirements: [
   lead/1250
-  sand-Circuit/3
+  sand-Mvcircuit/3
   metaglass/750
 ]
