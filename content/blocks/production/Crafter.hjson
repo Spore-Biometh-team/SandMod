@@ -38,8 +38,9 @@ recipes:
   input:  { 
     items:[
       sand-Circuit/1
-      plastainum/̀5
-      surge-alloy/5      ]}
+      Plastanium/̀5
+      surge-alloy/5      
+      ]}
   output: {
     items: [
       sand-Healr/1
@@ -51,8 +52,9 @@ recipes:
   input:  { 
     items:[
       sand-Circuit/1
-      sand-Resistor/̀2
-      Silisteel/5      ]}
+      sand-Resistor/1
+      sand-Silisteel/5   
+      ]}
   output: {
     items: [
       sand-Buldr/1
