@@ -19,10 +19,18 @@ recipes:
   craftTime: 600
 }
 {
-  input:  { items:[sand-Resistor/4]}
+  input:  { 
+    items:[
+      sand-Resistor/8
+      sand-Vacc/8
+      sand-Pizza/1
+      sand-Silisteel/4
+      copper/75
+      ] 
+      power:0.5}
   output: {
     items: [
-      sand-Circuit/1
+      sand-Circuit/2
     ]
   }
   craftTime: 600
@@ -36,9 +44,32 @@ recipes:
   }
   craftTime: 1200
 }
+{
+  input:  { items:[
+    surge-alloy/1
+    copper/75
+    silicon/5
+  ]}
+  output: {
+    items: [
+      sand-Pizza/1
+    ]
+  }
+  craftTime: 2000
+}
+{
+  input:  { items:[
+    silicon/30
+  ]}
+  output: {
+    items: [
+      sand-Silisteel/1
+    ]
+  }
+  craftTime: 2000
+}
 ]
 category: crafting
-craftTime: 80
 requirements: [
   copper/250
   graphite/50
