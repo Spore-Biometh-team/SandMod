@@ -36,6 +36,20 @@ recipes:
   craftTime: 600
 }
 {
+  input:  { 
+    items:[
+      sand-Circuit/1
+      plastinum/̀5
+      surge-alloy/5      ] 
+      power:0.5}
+  output: {
+    items: [
+      sand-Healr/1
+    ]
+  }
+  craftTime: 1800
+}
+{
   input:  { items:[metaglass/16]}
   output: {
     items: [
