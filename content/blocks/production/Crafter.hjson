@@ -38,7 +38,7 @@ recipes:
   input:  { 
     items:[
       sand-Circuit/1
-      plastanium/̀5
+      plastanium/5           
       surge-alloy/5      
       ]}
   output: {
