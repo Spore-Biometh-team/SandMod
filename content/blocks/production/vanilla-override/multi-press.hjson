@@ -1,0 +1,36 @@
+type: multicraft.MultiCrafter
+recipes: 
+[
+{
+  input:  { 
+    items:[
+      blast-compound/1
+      coal/6
+      ] 
+    liquids:[
+        water/0.2
+    ]
+      power:0.5}
+  output: {
+    items: [
+      graphite/3
+    ]
+  }
+  craftTime: 90
+}
+{
+  input:  { 
+    items:[
+      surge-alloy/2
+      copper/45
+      ] 
+      power:0.5}
+  output: {
+    items: [
+      sand-Pizza/2
+    ]
+  }
+  craftTime: 300
+}
+]
+category: crafting
