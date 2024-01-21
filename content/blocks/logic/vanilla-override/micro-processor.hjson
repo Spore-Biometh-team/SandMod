@@ -1,7 +1,8 @@
-  requirements: [
-    silicon/45
-    lead/150
-    copper/150
-    sand-Circuit/5
-    sand-Healr/1
-  ]
+requirements: [
+  silicon/45
+  lead/150
+  copper/150
+  sand-Circuit/5
+  sand-Healr/1
+]
+health:69
