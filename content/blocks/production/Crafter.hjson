@@ -63,6 +63,20 @@ recipes:
   craftTime: 1800
 }
 {
+  input:  { 
+    items:[
+      silicon/16
+      sand-Iron/2
+      Pyratite/5   
+      ]}
+  output: {
+    items: [
+      sand-Silisteel/2
+    ]
+  }
+  craftTime: 3600
+}
+{
   input:  { items:[metaglass/16]}
   output: {
     items: [
@@ -80,17 +94,6 @@ recipes:
   output: {
     items: [
       sand-Pizza/1
-    ]
-  }
-  craftTime: 2000
-}
-{
-  input:  { items:[
-    silicon/30
-  ]}
-  output: {
-    items: [
-      sand-Silisteel/1
     ]
   }
   craftTime: 2000

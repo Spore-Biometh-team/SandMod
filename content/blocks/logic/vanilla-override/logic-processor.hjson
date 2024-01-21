@@ -1,0 +1,7 @@
+  requirements: [
+    silicon/45
+    lead/450
+    thorium/150
+    sand-Mvcircuit/5
+    sand-Healr/1
+  ]
