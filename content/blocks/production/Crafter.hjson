@@ -26,8 +26,7 @@ recipes:
       sand-Pizza/1
       sand-Silisteel/4
       copper/75
-      ] 
-      power:0.5}
+      ]}
   output: {
     items: [
       sand-Circuit/2
@@ -39,9 +38,8 @@ recipes:
   input:  { 
     items:[
       sand-Circuit/1
-      plastinum/̀5
-      surge-alloy/5      ] 
-      power:0.5}
+      plastainum/̀5
+      surge-alloy/5      ]}
   output: {
     items: [
       sand-Healr/1
