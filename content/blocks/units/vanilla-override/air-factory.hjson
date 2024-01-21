@@ -2,10 +2,10 @@ plans: [
   {
   unit: flare
   requirements: [
-    sand-Silisteel/15
-    sand-Circuit/3
+    sand-Silisteel/1
+    sand-Circuit/1
   ]
-  time: 1500
+  time: 250
   }
   {
   unit: mono
