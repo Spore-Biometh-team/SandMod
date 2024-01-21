@@ -21,6 +21,7 @@ plans: [
   requirements: [
     sand-Silisteel/15
     sand-Circuit/3
+    sand-Healr/1
   ]
   time: 1500
   }
