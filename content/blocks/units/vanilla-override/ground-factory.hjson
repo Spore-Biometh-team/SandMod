@@ -1,0 +1,27 @@
+plans: [
+  {
+  unit: dagger
+  requirements: [
+    sand-Silisteel/15
+    sand-Circuit/3
+  ]
+  time: 1500
+  }
+  {
+  unit: crawler
+  requirements: [
+    sand-Silisteel/5
+    sand-Circuit/1
+    blast-compound/2
+  ]
+  time: 1500
+  }
+  {
+  unit: nova
+  requirements: [
+    sand-Silisteel/15
+    sand-Circuit/3
+  ]
+  time: 1500
+  }
+]
