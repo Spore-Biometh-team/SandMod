@@ -12,6 +12,7 @@ plans: [
   requirements: [
     sand-Silisteel/10
     sand-Circuit/2
+    sand-Buldr/1
   ]
   time: 1500
   }
@@ -20,6 +21,7 @@ plans: [
   requirements: [
     sand-Silisteel/5
     sand-Circuit/5
+    sand-Buldr/1
   ]
   time: 1500
   }
