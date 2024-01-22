@@ -7,13 +7,13 @@ recipes:
 {
   input:  { 
     liquids:[
-      hydrogen/0.5
-      sand-cl/0.5
+      water/0.5
+      slag/0.5
       ] 
       power:0.5}
   output: {
     liquids: [
-      sand-hcl/0.5
+      cryofluid/0.5
     ]
   }
   craftTime: 100
