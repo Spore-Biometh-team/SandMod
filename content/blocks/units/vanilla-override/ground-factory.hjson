@@ -29,7 +29,7 @@ plans: [
 ]
 requirements: [
 sand-Vacc/5
-sand-Silisteel/25
-copper/450
-lead/450
+silicon/150
+copper/250
+lead/250
 ]
