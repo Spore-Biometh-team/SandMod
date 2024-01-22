@@ -1,15 +1,17 @@
+consumes: {
+power: 5
+items: [
+plastanium/45
+titanium/250
+]
+}
+
 upgrades: [
 [dagger, mace]
 [flare, horizon]
 [risso, minke]
 ]
-consumes: {
-power: 5
-items: [
-silicon/150
-titanium/375
-]
-}
+
 requirements: [
 sand-Circuit/5
 sand-Silisteel/25
