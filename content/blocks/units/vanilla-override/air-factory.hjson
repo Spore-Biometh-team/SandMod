@@ -26,3 +26,9 @@ plans: [
   time: 1500
   }
 ]
+requirements: [
+sand-Vacc/5
+sand-Silisteel/25
+copper/450
+lead/450
+]

@@ -3,3 +3,9 @@ upgrades: [
 [flare, horizon]
 [risso, minke]
 ]
+requirements: [
+sand-Circuit/5
+sand-Silisteel/25
+copper/450
+lead/450
+]

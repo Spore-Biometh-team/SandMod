@@ -10,7 +10,8 @@ size: 3
 consumes: {
 power: 5
 items: [
-silicon/450
+silicon/150
+titanium/375
 sand-Healr/5
 sand-Buldr/5
 ]
