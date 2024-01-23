@@ -2,7 +2,7 @@ type: multicraft.MultiCrafter
 health: 1450
 itemCapacity: 50
 size: 2
-recipes: 
+recipes: [
 {
   input:  { 
     items:[
