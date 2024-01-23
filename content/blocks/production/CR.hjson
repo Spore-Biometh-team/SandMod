@@ -17,7 +17,7 @@ recipes: [
       sand-dio/0.2
     ]
   }
-  craftTime: 100
+  craftTime: 180
 }
 
 
@@ -35,7 +35,7 @@ recipes: [
       sand-sulfide/0.13
     ]
   }
-  craftTime: 100
+  craftTime: 180
 }
 
 {
@@ -50,7 +50,7 @@ recipes: [
       sand-trio/0.13
     ]
   }
-  craftTime: 100
+  craftTime: 600
 }
 {
   input:  { 
@@ -64,7 +64,7 @@ recipes: [
       sand-sulfuric/0.13
     ]
   }
-  craftTime: 100
+  craftTime: 960
 }
 {
   input:  { 
@@ -78,7 +78,7 @@ recipes: [
       sand-sulfuric/0.13
     ]
   }
-  craftTime: 100
+  craftTime: 480
 }
 {
   input:  { 
@@ -92,7 +92,7 @@ recipes: [
       sand-hcl/0.5
     ]
   }
-  craftTime: 100
+  craftTime: 180
 }
 ]
 category: crafting
