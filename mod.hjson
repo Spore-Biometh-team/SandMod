@@ -1,7 +1,7 @@
 name: "sand"
 displayName: "Greektech"
 author: "Watermocules"
-description: "Run out of thing to do in campaign? Worry not, we will provide you more."
+description: "Fun have been surgically removed from this mod, now with gregtech level of grinding."
 version: "1.00"
 minGameVersion: "140"
 dependencies: ["multi-crafter"]
