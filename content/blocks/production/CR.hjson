@@ -27,12 +27,12 @@ recipes: [
       sand-Sulfur/1
     ]
     fluids:[
-      hydrogen/0.2
+      hydrogen/0.13
       ] 
       power:0.5}
   output: {
     fluids: [
-      sand-sulfide/0.2
+      sand-sulfide/0.13
     ]
   }
   craftTime: 100
@@ -41,13 +41,13 @@ recipes: [
 {
   input:  { 
     fluids:[
-      sand-dio/0.2
-      sand-oxygen/0.2
+      sand-dio/0.13
+      sand-oxygen/0.13
       ] 
       power:0.5}
   output: {
     fluids: [
-      sand-trio/0.2
+      sand-trio/0.13
     ]
   }
   craftTime: 100
@@ -55,13 +55,13 @@ recipes: [
 {
   input:  { 
     fluids:[
-      sand-sulfide/0.2
-      sand-oxygen/0.7
+      sand-sulfide/0.13
+      sand-oxygen/0.63
       ] 
       power:0.5}
   output: {
     fluids: [
-      sand-sulfuric/0.2
+      sand-sulfuric/0.13
     ]
   }
   craftTime: 100
@@ -69,13 +69,13 @@ recipes: [
 {
   input:  { 
     fluids:[
-      sand-trio/0.2
-      water/0.2
+      sand-trio/0.13
+      water/0.15
       ] 
       power:0.5}
   output: {
     fluids: [
-      sand-sulfuric/0.2
+      sand-sulfuric/0.13
     ]
   }
   craftTime: 100
