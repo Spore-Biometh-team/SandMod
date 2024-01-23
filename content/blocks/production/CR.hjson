@@ -27,7 +27,7 @@ recipes: [
       sand-Sulfur/1
     ]
     fluids:[
-      hydrogen/0.13
+      hydrogen/0.14
       ] 
       power:0.5}
   output: {
