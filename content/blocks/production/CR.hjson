@@ -18,6 +18,98 @@ recipes:
   }
   craftTime: 100
 }
+
+{
+  input:  { 
+    items:[
+      sand-sulfur/1
+    ]
+    fluids:[
+      oxygen/0.45
+      ] 
+      power:0.5}
+  output: {
+    fluids: [
+      sand-dio/0.3
+    ]
+  }
+  craftTime: 100
+}
+
+
+{
+  input:  { 
+    items:[
+      sand-sulfur/1
+    ]
+    fluids:[
+      hydrogen/0.3
+      ] 
+      power:0.5}
+  output: {
+    fluids: [
+      sand-sulfide/0.3
+    ]
+  }
+  craftTime: 100
+}
+
+{
+  input:  { 
+    fluids:[
+      sand-dio/0.3
+      oxy/0.3
+      ] 
+      power:0.5}
+  output: {
+    fluids: [
+      sand-trio/0.3
+    ]
+  }
+  craftTime: 100
+}
+{
+  input:  { 
+    fluids:[
+      sand-sulfide/0.3
+      oxygen/0.55
+      ] 
+      power:0.5}
+  output: {
+    fluids: [
+      sand-sulfuric/0.3
+    ]
+  }
+  craftTime: 100
+}
+{
+  input:  { 
+    fluids:[
+      sand-trio/0.3
+      water/0.3
+      ] 
+      power:0.5}
+  output: {
+    fluids: [
+      sand-sulfuric/0.3
+    ]
+  }
+  craftTime: 100
+}
+{
+  input:  { 
+    fluids:[
+      sand-cl/0.5
+      hydrogen/0.5
+      ] 
+      power:0.5}
+  output: {
+    fluids: [
+      sand-hcl/0.5
+    ]
+  }
+  craftTime: 100
+}
 ]
 category: crafting
 drawer: {
