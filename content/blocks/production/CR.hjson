@@ -3,22 +3,6 @@ health: 1450
 itemCapacity: 50
 size: 2
 recipes: 
-[
-{
-  input:  { 
-    fluids:[
-      sand-cl/0.5
-      hydrogen/0.5
-      ] 
-      power:0.5}
-  output: {
-    fluids: [
-      sand-hcl/0.5
-    ]
-  }
-  craftTime: 100
-}
-
 {
   input:  { 
     items:[
