@@ -141,5 +141,5 @@ drawer: {
 requirements: [
   lead/650
   metaglass/450
-  sand-mvCircuit/3
+  sand-Mvcircuit/3
 ]
