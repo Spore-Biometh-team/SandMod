@@ -98,7 +98,7 @@ recipes: [
   input:  { 
     fluids:[
       sand-sulfide/0.22
-      oxygen/0.5
+      sand-oxygen/0.5
       ] 
       power:0.5}
   output: {
