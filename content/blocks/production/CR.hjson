@@ -105,6 +105,7 @@ recipes: [
     fluids: [
       sand-dio/0.22
       water/0.22
+      fluidOutputDirections:[1,3]
     ]
   }
   craftTime: 180
@@ -127,6 +128,9 @@ drawer: {
 }
 requirements: [
   lead/650
+  Silisteel/25
   metaglass/450
   sand-Circuit/3
 ]
+powerCapacity: 2048
+menu: simple

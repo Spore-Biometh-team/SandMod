@@ -107,3 +107,4 @@ requirements: [
 research:{
   parent: core-shard
 }
+menu: simple

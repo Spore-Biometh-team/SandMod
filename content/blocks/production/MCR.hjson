@@ -143,3 +143,5 @@ requirements: [
   metaglass/450
   sand-Mvcircuit/3
 ]
+powerCapacity: 8192
+menu: simple

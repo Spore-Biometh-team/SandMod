@@ -38,7 +38,10 @@ drawer: {
   ]
 }
 requirements: [
-  lead/1250
+  Silisteel/75
   sand-Mvcircuit/3
   metaglass/750
+  lead/1250
 ]
+powerCapacity: 2048
+menu: simple
