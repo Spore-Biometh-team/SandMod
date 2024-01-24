@@ -133,4 +133,4 @@ requirements: [
 ]
 powerCapacity: 2048
 menu: simple
-fluidOutputDirections:[0,4]
+fluidOutputDirections:[2,4]
