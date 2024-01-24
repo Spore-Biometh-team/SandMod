@@ -94,6 +94,21 @@ recipes: [
   }
   craftTime: 180
 }
+{
+  input:  { 
+    fluids:[
+      sand-sulfide/0.22
+      oxygen/0.5
+      ] 
+      power:0.5}
+  output: {
+    fluids: [
+      sand-dio/0.22
+      water/0.22
+    ]
+  }
+  craftTime: 180
+}
 ]
 category: crafting
 drawer: {
