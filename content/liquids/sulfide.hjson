@@ -2,3 +2,4 @@ color: cc4e05
 gas: true
 gasColor: cc4e05
 heatCapacity: 0.6
+temperature: 1
