@@ -1,6 +1,6 @@
-package greg.content;
+package greg.contents;
 
-import greg.content.blocks.*;
+import greg.contents.blocks.*;
 
 public class GregLoader {
     public static void load(){

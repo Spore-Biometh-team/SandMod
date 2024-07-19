@@ -21,7 +21,7 @@ import mindustry.world.blocks.units.UnitFactory;
 import mindustry.type.*;
 import mindustry.content.*;
 import mindustry.world.blocks.units.*;
-import greg.*;
+import greg.contents.*;
 
 
 import static mindustry.Vars.*;
@@ -34,14 +34,14 @@ public class greg extends Mod{
         Log.info("IM GREGGING");
 
         Events.on(ClientLoadEvent.class, e -> {
-            Blocks.pulverizer.requirements(Category.crafting, with(Items.copper, 1984, Items.lead, 1984));
+            
         });
     }
 
     @Override
     public void loadContent(){
         Log.info("IM BOUT TA GREG");
-        GregItem.load();
+        GregItems.load();
         GregLoader.load();
     }
 

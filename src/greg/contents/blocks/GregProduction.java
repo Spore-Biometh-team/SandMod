@@ -1,3 +1,5 @@
+package greg.contents.blocks;
+import arc.struct.Seq;
 import mindustry.entities.bullet.*;
 import mindustry.entities.effect.*;
 import mindustry.entities.part.DrawPart.*;
@@ -28,18 +30,63 @@ import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 import mindustry.content.*;
+import greg.contents.*;
+import multicraft.*;
 
 import static mindustry.Vars.*;
 import static mindustry.type.ItemStack.*;
 import static mindustry.content.Items.*;
 
 
-public class JPProduction{
+public class GregProduction{
     public static Block
 
-        Crafter;
+        Furnace, Crafter, mine;
         public static void load(){
+            Blocks.mechanicalDrill.requirements(Category.production, with(GregItems.copper, 50));
+            mine = new MultiCrafter("mine") {{
+            resolvedRecipes = Seq.with(
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(Items.copper, 10)),
+                        Seq.with()
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.copper, 5)),
+                        Seq.with()
+                    ), 5f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(Items.copper, 1)),
+                        Seq.with()
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.stone, 5)),
+                        Seq.with()
+                    ), 2.5f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(Items.copper, 1)),
+                        Seq.with()
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.copper, 5)),
+                        Seq.with()
+                    ), 2.5f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(Items.lead, 1)),
+                        Seq.with()
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.copper, 10)),
+                        Seq.with()
+                    ), 5f * 60f
+                )
+            );
+            }};
 
-
-
-        }};
+}};
