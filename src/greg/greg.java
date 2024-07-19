@@ -42,7 +42,9 @@ public class greg extends Mod{
     public void loadContent(){
         Log.info("IM BOUT TA GREG");
         GregItems.load();
+        GregLiquids.load();
         GregLoader.load();
+        GregSectors.load();
     }
 
 }
