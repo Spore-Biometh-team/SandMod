@@ -28,6 +28,7 @@ public class GregTechtree {
                 node(GregProduction.Boiler);
                 node(GregProduction.Crafter);
             });
-            });   
             node(GregTurrets.pduo); 
+            });   
+            
     }};

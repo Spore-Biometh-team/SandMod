@@ -46,6 +46,7 @@ public class GregProduction{
         ID, Furnace, Crafter, Boiler;
         public static void load(){
             Furnace = new MultiCrafter("Furnace") {{
+            researchCostMultiplier = 0.05f;
             requirements(Category.crafting, with(GregItems.stone, 80));
             size = 2;
             drawer = new DrawMulti(new DrawDefault(), new DrawFlame());
@@ -131,6 +132,7 @@ public class GregProduction{
             drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(Liquids.water), new DrawLiquidTile(GregLiquids.Steam){{drawLiquidLight = true;}}, new DrawDefault());
             consumeItem(Items.coal, 2);
             consumeLiquid(Liquids.water, 12f / 60f);
+            researchCostMultiplier = 0.05f;
         }};
 
 }};

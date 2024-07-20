@@ -91,6 +91,7 @@ public class GregTurrets{
             inaccuracy = 2f;
             rotateSpeed = 2f;
             consumeLiquid(GregLiquids.Steam, 6f / 60f);
+            researchCostMultiplier = 0.05f;
             //tf is this!?!?!
             // limitRange();
         }};
