@@ -5,3 +5,5 @@ description: "Fun have been surgically removed from this mod, now with gregtech 
 version: "1.00"
 minGameVersion: "140"
 dependencies: ["multi-crafter"]
+main: "greg.greg"
+java: true
