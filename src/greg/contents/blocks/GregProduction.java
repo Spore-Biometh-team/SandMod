@@ -45,22 +45,8 @@ public class GregProduction{
 
         ID, Furnace, Crafter, Boiler;
         public static void load(){
-            
-            Blocks.duo.requirements(Category.turret, with(GregItems.copper, 115));
-            Blocks.scatter.requirements(Category.turret, with(GregItems.copper, 115, GregItems.lead, 250));
-            Blocks.mechanicalDrill.requirements(Category.production, with(GregItems.copper, 50));
-            Blocks.mechanicalDrill.consumeLiquid(GregLiquids.Steam, 6f / 60f);
-            Blocks.mechanicalDrill.researchCost = with(GregItems.copper, 5);
-            Blocks.conveyor.requirements(Category.distribution, with(GregItems.stone, 1));
-            Blocks.conveyor.researchCost = with(GregItems.stone, 25);
-            Blocks.duneWall.itemDrop = GregItems.stone;
-            UnitTypes.alpha.mineWalls = true;
-            UnitTypes.alpha.mineTier = 2;
-            UnitTypes.beta.mineWalls = true;
-            UnitTypes.beta.mineTier = 2;
-            UnitTypes.gamma.mineWalls = true;
             Furnace = new MultiCrafter("Furnace") {{
-            requirements(Category.production, with(GregItems.stone, 80));
+            requirements(Category.crafting, with(GregItems.stone, 80));
             size = 2;
             drawer = new DrawMulti(new DrawDefault(), new DrawFlame());
             resolvedRecipes = Seq.with(
@@ -76,11 +62,47 @@ public class GregProduction{
                 ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(Items.lead, 5, Items.coal, 2)),
+                        Seq.with(ItemStack.with(Items.lead, 5, Items.coal, 5)),
                         Seq.with()
                     ),
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.lead, 1)),
+                        Seq.with()
+                    ), 10f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Ice, 5, Items.coal, 1)),
+                        Seq.with()
+                    ),
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(Liquids.water, 6f / 60f))
+                    ), 10f * 60f
+                )
+            );
+            }};
+            Crafter = new MultiCrafter("Crafter") {{
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 450));
+            size = 2;
+            resolvedRecipes = Seq.with(
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.copper, 8, Items.coal, 4)),
+                        Seq.with(LiquidStack.with(GregLiquids.Steam, 12f / 60f))
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Resistor, 3)),
+                        Seq.with()
+                    ), 15f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.copper, 9, GregItems.Tube, 1, GregItems.Silisteel, 1)),
+                        Seq.with(LiquidStack.with(GregLiquids.Steam, 12f / 60f))
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Vacc, 1)),
                         Seq.with()
                     ), 10f * 60f
                 )

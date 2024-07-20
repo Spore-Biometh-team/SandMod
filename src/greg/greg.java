@@ -45,6 +45,7 @@ public class greg extends Mod{
         GregLiquids.load();
         GregLoader.load();
         GregSectors.load();
+        GregTechtree.load();
     }
 
 }
