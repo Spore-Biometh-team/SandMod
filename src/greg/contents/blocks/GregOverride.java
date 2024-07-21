@@ -59,7 +59,7 @@ public class GregOverride{
             Blocks.conveyor.researchCost = with(GregItems.stone, 25);
             Blocks.duneWall.itemDrop = GregItems.stone;
             Blocks.iceWall.itemDrop = GregItems.Ice;
-            Blocks.whiteTree.itemDrop = GregItems.Ice;
+            Blocks.whiteTree.itemDrop = GregItems.Resin;
             UnitTypes.alpha.mineWalls = true;
             UnitTypes.alpha.mineTier = 2;
             UnitTypes.beta.mineWalls = true;
