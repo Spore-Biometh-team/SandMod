@@ -52,12 +52,14 @@ public class GregOverride{
             Blocks.mechanicalDrill.requirements(Category.production, with(GregItems.copper, 50));
             Blocks.mechanicalDrill.consumeLiquid(GregLiquids.Steam, 6f / 60f);
             Blocks.mechanicalDrill.researchCost = with(GregItems.copper, 5);
+            Blocks.pneumaticDrill.requirements(Category.production, with(GregItems.copper, 75, Items.graphite, 25));
             Blocks.conveyor.requirements(Category.distribution, with(GregItems.stone, 1));
             Blocks.router.requirements(Category.distribution, with(GregItems.stone, 3));
             Blocks.junction.requirements(Category.distribution, with(GregItems.stone, 2));
             Blocks.conveyor.researchCost = with(GregItems.stone, 25);
             Blocks.duneWall.itemDrop = GregItems.stone;
             Blocks.iceWall.itemDrop = GregItems.Ice;
+            Blocks.whiteTree.itemDrop = GregItems.Ice;
             UnitTypes.alpha.mineWalls = true;
             UnitTypes.alpha.mineTier = 2;
             UnitTypes.beta.mineWalls = true;

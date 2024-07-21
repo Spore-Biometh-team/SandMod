@@ -106,6 +106,26 @@ public class GregProduction{
                         Seq.with(ItemStack.with(GregItems.Vacc, 1)),
                         Seq.with()
                     ), 10f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.copper, 20, GregItems.Resin, 9)),
+                        Seq.with(LiquidStack.with(GregLiquids.Steam, 12f / 60f))
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Pizza, 1)),
+                        Seq.with()
+                    ), 25f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.lead, 5, GregItems.Pizza, 1, GregItems.Silisteel, 1, GregItems.Resistor, 2, GregItems.Vacc, 2)),
+                        Seq.with(LiquidStack.with(GregLiquids.Steam, 12f / 60f))
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Circuit, 1)),
+                        Seq.with()
+                    ), 60f * 60f
                 )
             );
             }};
