@@ -90,7 +90,7 @@ public class GregProduction{
                 new Recipe(
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.copper, 6, GregItems.lead, 4,Items.coal, 4)),
-                        Seq.with(LiquidStack.with(GregLiquids.Steam, 12f / 60f))
+                        Seq.with(LiquidStack.with(GregLiquids.steam, 12f / 60f))
                     ),
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.Resistor, 3)),
@@ -100,7 +100,7 @@ public class GregProduction{
                 new Recipe(
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.CLG, 2, GregItems.Transistor, 1, GregItems.Pizza, 1)),
-                        Seq.with(LiquidStack.with(GregLiquids.Steam, 35f / 60f))
+                        Seq.with(LiquidStack.with(GregLiquids.steam, 35f / 60f))
                     ),
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.MS, 1)),
@@ -110,7 +110,7 @@ public class GregProduction{
                 new Recipe(
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.copper, 9, GregItems.Tube, 1, GregItems.Silisteel, 1)),
-                        Seq.with(LiquidStack.with(GregLiquids.Steam, 12f / 60f))
+                        Seq.with(LiquidStack.with(GregLiquids.steam, 12f / 60f))
                     ),
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.Vacc, 1)),
@@ -120,7 +120,7 @@ public class GregProduction{
                 new Recipe(
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.copper, 20, GregItems.Resin, 9)),
-                        Seq.with(LiquidStack.with(GregLiquids.Steam, 12f / 60f))
+                        Seq.with(LiquidStack.with(GregLiquids.steam, 12f / 60f))
                     ),
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.Pizza, 1)),
@@ -130,7 +130,7 @@ public class GregProduction{
                 new Recipe(
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.lead, 5, GregItems.Pizza, 1, GregItems.Silisteel, 1, GregItems.Resistor, 2, GregItems.Vacc, 2)),
-                        Seq.with(LiquidStack.with(GregLiquids.Steam, 12f / 60f))
+                        Seq.with(LiquidStack.with(GregLiquids.steam, 12f / 60f))
                     ),
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.Circuit, 1)),
@@ -151,15 +151,15 @@ public class GregProduction{
             explodeOnFull = true;
             explosionPuddles = 5;
             explosionPuddleRange = 4f;
-            explosionPuddleLiquid = GregLiquids.Steam;
+            explosionPuddleLiquid = GregLiquids.steam;
             explosionPuddleAmount = 20f;
             hasItems = true;
             hasPower = true;
             consumeEffect = Fx.smeltsmoke;
-            outputLiquid = new LiquidStack(GregLiquids.Steam, 12f / 60f);
+            outputLiquid = new LiquidStack(GregLiquids.steam, 12f / 60f);
             liquidCapacity = 600f;
             size = 2;
-            drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(Liquids.water), new DrawLiquidTile(GregLiquids.Steam){{drawLiquidLight = true;}}, new DrawDefault());
+            drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(Liquids.water), new DrawLiquidTile(GregLiquids.steam){{drawLiquidLight = true;}}, new DrawDefault());
             consumeItem(Items.coal, 2);
             consumeLiquid(Liquids.water, 12f / 60f);
             researchCostMultiplier = 0.05f;

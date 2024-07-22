@@ -51,7 +51,7 @@ public class GregOverride{
             Blocks.scatter.requirements(Category.turret, with(GregItems.copper, 115, GregItems.lead, 250, GregItems.MS, 1));
             Blocks.scorch.requirements(Category.turret, with(GregItems.copper, 75, Items.graphite, 45, GregItems.MS, 1));
             Blocks.mechanicalDrill.requirements(Category.production, with(GregItems.copper, 50));
-            Blocks.mechanicalDrill.consumeLiquid(GregLiquids.Steam, 6f / 60f);
+            Blocks.mechanicalDrill.consumeLiquid(GregLiquids.steam, 6f / 60f);
             Blocks.mechanicalDrill.researchCost = with(GregItems.copper, 5);
             Blocks.pneumaticDrill.requirements(Category.production, with(GregItems.copper, 75, Items.graphite, 25));
             Blocks.laserDrill.requirements(Category.defense, with(GregItems.Circuit, 1, GregItems.copper, 125, GregItems.Silisteel, 75));

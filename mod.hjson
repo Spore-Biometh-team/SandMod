@@ -2,6 +2,7 @@ name: "sand"
 displayName: "Greektech"
 author: "Watermocules"
 description: "Fun have been surgically removed from this mod, now with gregtech level of grinding."
+subtitle: "I always comes back"
 version: "1.00"
 minGameVersion: "140"
 dependencies: ["multi-crafter"]
