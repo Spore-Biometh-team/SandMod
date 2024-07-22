@@ -89,13 +89,23 @@ public class GregProduction{
             resolvedRecipes = Seq.with(
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.copper, 8, Items.coal, 4)),
+                        Seq.with(ItemStack.with(GregItems.copper, 6, GregItems.lead, 4,Items.coal, 4)),
                         Seq.with(LiquidStack.with(GregLiquids.Steam, 12f / 60f))
                     ),
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.Resistor, 3)),
                         Seq.with()
                     ), 15f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.CLG, 2, GregItems.Transistor, 1, GregItems.Pizza, 1)),
+                        Seq.with(LiquidStack.with(GregLiquids.Steam, 35f / 60f))
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.MS, 1)),
+                        Seq.with()
+                    ), 60f * 60f
                 ),
                 new Recipe(
                     new IOEntry(

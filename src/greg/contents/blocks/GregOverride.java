@@ -1,6 +1,7 @@
 package greg.contents.blocks;
 
 import arc.struct.Seq;
+import mindustry.entities.units.*;
 import mindustry.entities.bullet.*;
 import mindustry.entities.effect.*;
 import mindustry.entities.part.DrawPart.*;
@@ -44,18 +45,23 @@ public class GregOverride{
 
         ID, Furnace, Crafter, Boiler;
         public static void load(){
-            Blocks.kiln.consumeItems(with(GregItems.lead, 2, Items.sand, 2));
             Blocks.copperWallLarge.requirements(Category.defense, with(GregItems.copper, 25));
             Blocks.copperWall.requirements(Category.defense, with(GregItems.copper, 5));
-            Blocks.duo.requirements(Category.turret, with(GregItems.copper, 115));
-            Blocks.scatter.requirements(Category.turret, with(GregItems.copper, 115, GregItems.lead, 250));
+            Blocks.duo.requirements(Category.turret, with(GregItems.copper, 115, GregItems.MS, 1));  
+            Blocks.scatter.requirements(Category.turret, with(GregItems.copper, 115, GregItems.lead, 250, GregItems.MS, 1));
+            Blocks.scorch.requirements(Category.turret, with(GregItems.copper, 75, Items.graphite, 45, GregItems.MS, 1));
             Blocks.mechanicalDrill.requirements(Category.production, with(GregItems.copper, 50));
             Blocks.mechanicalDrill.consumeLiquid(GregLiquids.Steam, 6f / 60f);
             Blocks.mechanicalDrill.researchCost = with(GregItems.copper, 5);
             Blocks.pneumaticDrill.requirements(Category.production, with(GregItems.copper, 75, Items.graphite, 25));
+            Blocks.laserDrill.requirements(Category.defense, with(GregItems.Circuit, 1, GregItems.copper, 125, GregItems.Silisteel, 75));
             Blocks.conveyor.requirements(Category.distribution, with(GregItems.stone, 1));
             Blocks.router.requirements(Category.distribution, with(GregItems.stone, 3));
             Blocks.junction.requirements(Category.distribution, with(GregItems.stone, 2));
+            Blocks.sorter.requirements(Category.distribution, with(GregItems.stone, 10));
+            Blocks.invertedSorter.requirements(Category.distribution, with(GregItems.copper, 5, GregItems.stone , 10));
+            Blocks.overflowGate.requirements(Category.distribution, with(GregItems.stone, 10));
+            Blocks.underflowGate.requirements(Category.distribution, with(GregItems.copper, 5, GregItems.stone, 10));
             Blocks.conveyor.researchCost = with(GregItems.stone, 25);
             Blocks.duneWall.itemDrop = GregItems.stone;
             Blocks.iceWall.itemDrop = GregItems.Ice;
