@@ -47,7 +47,7 @@ public class GregProduction{
         public static void load(){
             Furnace = new MultiCrafter("Furnace") {{
             requirements(Category.crafting, with(GregItems.stone, 80));
-            menu = "simple"
+            menu = "simple";
             researchCostMultiplier = 0.05f;
             size = 2;
             drawer = new DrawMulti(new DrawDefault(), new DrawFlame());
