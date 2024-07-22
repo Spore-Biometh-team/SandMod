@@ -45,13 +45,19 @@ public class GregOverride{
 
         ID, Furnace, Crafter, Boiler;
         public static void load(){
+            // Blocks.groundFactory.plans = Seq.with(
+            //     new UnitPlan(UnitTypes.dagger, 60f * 15, with(Items.silicon, 10, Items.lead, 10)),
+            //     new UnitPlan(UnitTypes.crawler, 60f * 10, with(Items.silicon, 8, Items.coal, 10)),
+            //     new UnitPlan(UnitTypes.nova, 60f * 40, with(Items.silicon, 30, Items.lead, 20, Items.titanium, 20))
+            // );
             Blocks.copperWallLarge.requirements(Category.defense, with(GregItems.copper, 25));
             Blocks.copperWall.requirements(Category.defense, with(GregItems.copper, 5));
             Blocks.duo.requirements(Category.turret, with(GregItems.copper, 115, GregItems.MS, 1, GregItems.PES, 25));  
-            Blocks.scatter.requirements(Category.turret, with(GregItems.copper, 115, GregItems.lead, 250, GregItems.MS, 1, GregItems.PES, 50));
+            Blocks.scatter.requirements(Category.turret, with(GregItems.copper, 115, GregItems.lead, 250, GregItems.MS, 1, GregItems.PES, 100));
             Blocks.scorch.requirements(Category.turret, with(GregItems.copper, 75, Items.graphite, 45, GregItems.MS, 1, GregItems.PES, 25));
+            Blocks.hail.requirements(Category.turret, with(GregItems.copper, 75, Items.graphite, 45, GregItems.MS, 1, GregItems.PES, 25));
             Blocks.arc.requirements(Category.turret, with(GregItems.copper, 75, GregItems.lead, 65, GregItems.MS, 1, GregItems.PES, 25));
-            Blocks.lancer.requirements(Category.turret, with(GregItems.copper, 225, GregItems.lead, 115, GregItems.titanium, 50, Items.silicon, 115, GregItems.MS, 1, GregItems.PES, 50));
+            Blocks.lancer.requirements(Category.turret, with(GregItems.copper, 225, GregItems.lead, 115, GregItems.titanium, 50, Items.silicon, 115, GregItems.MS, 1, GregItems.PES, 100));
             Blocks.mechanicalDrill.requirements(Category.production, with(GregItems.copper, 50));
             Blocks.mechanicalDrill.consumeLiquid(GregLiquids.steam, 6f / 60f);
             Blocks.mechanicalDrill.researchCost = with(GregItems.copper, 5);

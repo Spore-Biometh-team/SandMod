@@ -46,8 +46,9 @@ public class GregProduction{
         ID, Furnace, Crafter, Boiler, PDD;
         public static void load(){
             Furnace = new MultiCrafter("Furnace") {{
-            researchCostMultiplier = 0.05f;
             requirements(Category.crafting, with(GregItems.stone, 80));
+            menu = "simple"
+            researchCostMultiplier = 0.05f;
             size = 2;
             drawer = new DrawMulti(new DrawDefault(), new DrawFlame());
             resolvedRecipes = Seq.with(
@@ -115,6 +116,7 @@ public class GregProduction{
             }};
             Crafter = new MultiCrafter("Crafter") {{
             requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 450));
+            menu = "simple";
             size = 2;
             resolvedRecipes = Seq.with(
                 new Recipe(
