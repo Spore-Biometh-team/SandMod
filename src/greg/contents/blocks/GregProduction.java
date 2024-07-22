@@ -43,7 +43,7 @@ import static mindustry.content.Items.*;
 public class GregProduction{
     public static Block
 
-        ID, Furnace, Crafter, Boiler;
+        ID, Furnace, Crafter, Boiler, PDD;
         public static void load(){
             Furnace = new MultiCrafter("Furnace") {{
             researchCostMultiplier = 0.05f;
@@ -60,6 +60,16 @@ public class GregProduction{
                         Seq.with(ItemStack.with(GregItems.copper, 1)),
                         Seq.with()
                     ), 30f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.rawIron, 5, Items.coal, 10)),
+                        Seq.with()
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Iron, 1)),
+                        Seq.with()
+                    ), 60f * 60f
                 ),
                 new Recipe(
                     new IOEntry(
@@ -80,6 +90,26 @@ public class GregProduction{
                         Seq.with(),
                         Seq.with(LiquidStack.with(Liquids.water, 6f / 60f))
                     ), 10f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(Items.sand, 20, Items.coal, 5)),
+                        Seq.with()
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Tube, 6)),
+                        Seq.with()
+                    ), 60f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(Items.silicon, 3, GregItems.Iron, 5)),
+                        Seq.with()
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Silisteel, 1)),
+                        Seq.with()
+                    ), 30f * 60f
                 )
             );
             }};
@@ -164,5 +194,22 @@ public class GregProduction{
             consumeLiquid(Liquids.water, 12f / 60f);
             researchCostMultiplier = 0.05f;
         }};
+        PDD = new Separator("PDD"){{
+            requirements(Category.production, with(GregItems.copper, 220, GregItems.lead, 175));
+            results = with(
+                GregItems.rawIron, 1,
+                Items.titanium, 1,
+                Items.lead, 2,
+                Items.copper, 2
+            );
+            hasPower = true;
+            craftTime = 150f;
+            size = 2;
+            itemCapacity = 50;
 
+            consumeItems(with(Items.coal, 10));
+            consumeLiquid(GregLiquids.steam, 0.3f);
+
+            // drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(), new DrawRegion("-spinner", 3, true), new DrawDefault());
+        }};
 }};
