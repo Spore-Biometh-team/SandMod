@@ -24,9 +24,7 @@ public class GregLiquids{
             gasColor = Color.grays(0.9f);
             // alwaysUnlocked = true;
         }};
-        Ethanol = new Liquid("ethanol", Color.valueOf("ffffff")){{
-            gas = true;
-            gasColor = Color.grays(0.9f);
+        ethanol = new Liquid("ethanol", Color.valueOf("ffffff")){{
             // alwaysUnlocked = true;
         }};
         ethy = new Liquid("ethy", Color.valueOf("ffffff")){{
@@ -35,8 +33,6 @@ public class GregLiquids{
             // alwaysUnlocked = true;
         }};
         polyethy = new Liquid("polyethy", Color.valueOf("ffffff")){{
-            gas = true;
-            gasColor = Color.grays(0.9f);
             // alwaysUnlocked = true;
         }};
 }};
