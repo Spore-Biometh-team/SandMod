@@ -218,6 +218,8 @@ public class GregProduction{
             liquidCapacity = 16000f;
             fluidOutputDirections = new int[]{2, 4};
             hasPower = true;
+            hasItems = true;
+            hasLiquids = true;
             size = 2;
             resolvedRecipes = Seq.with(
                 new Recipe(
@@ -231,35 +233,35 @@ public class GregProduction{
                     ),
                     //output
                     new IOEntry(
-                        Seq.with(ItemStack.with()),
+                        Seq.with(),
                         Seq.with(LiquidStack.with(GregLiquids.dio, 333f / 60f))
                     ), 3f * 60f
                 ),
-                // new Recipe(
-                //     new IOEntry(
-                //         Seq.with(ItemStack.with()),
-                //         Seq.with(LiquidStack.with(GregLiquids.dio, 100f / 60f ,GregLiquids.oxygen, 100f / 60f)),
-                //         420f / 60f
-                //     ),
-                //     new IOEntry(
-                //         Seq.with(ItemStack.with()),
-                //         Seq.with(LiquidStack.with(GregLiquids.trio, 100f / 60f))
-                //     ), 100f * 60f
-                // ),
-                // new Recipe(
-                //     new IOEntry(
-                //         Seq.with(ItemStack.with()),
-                //         Seq.with(LiquidStack.with(GregLiquids.trio, 125f / 60f ,Liquids.water, 125f / 60f)),
-                //         500f / 60f
-                //     ),
-                //     new IOEntry(
-                //         Seq.with(ItemStack.with()),
-                //         Seq.with(LiquidStack.with(GregLiquids.sulfuric, 125f / 60f))
-                //     ), 8f * 60f
-                // ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with()),
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(GregLiquids.dio, 100f / 60f ,GregLiquids.oxygen, 100f / 60f)),
+                        420f / 60f
+                    ),
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(GregLiquids.trio, 100f / 60f))
+                    ), 100f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(GregLiquids.trio, 125f / 60f ,Liquids.water, 125f / 60f)),
+                        500f / 60f
+                    ),
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(GregLiquids.sulfuric, 125f / 60f))
+                    ), 8f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(),
                         Seq.with(LiquidStack.with(GregLiquids.sulfuric, 16f / 60f, GregLiquids.ethanol, 16f / 60f)),
                         7200f / 60f
                     ),
