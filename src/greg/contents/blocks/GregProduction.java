@@ -215,49 +215,60 @@ public class GregProduction{
         }};
             CR = new MultiCrafter("CR") {{
             requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 450, GregItems.Circuit, 5));
-            // menu = "simple";
+            liquidCapacity = 16000f;
+            fluidOutputDirections = new int[]{2, 4};
+            hasPower = true;
             size = 2;
             resolvedRecipes = Seq.with(
                 new Recipe(
+                    //input
                     new IOEntry(
-                        Seq.with(ItemStack.with()),
-                        Seq.with(LiquidStack.with(GregLiquids.sulfide, 60f / 60f, GregLiquids.oxygen, 180f / 60f))
+                        //Items
+                        Seq.with(ItemStack.with(GregItems.Sulfur, 1)),
+                        //Liquids and power
+                        Seq.with(LiquidStack.with(GregLiquids.oxygen, 666f / 60f)),
+                        420f / 60f
                     ),
+                    //output
                     new IOEntry(
                         Seq.with(ItemStack.with()),
-                        Seq.with(LiquidStack.with(GregLiquids.dio, 60f / 60f, Liquids.water, 60f / 60f))
-                    ), 30f * 60f
+                        Seq.with(LiquidStack.with(GregLiquids.dio, 333f / 60f))
+                    ), 3f * 60f
                 ),
+                // new Recipe(
+                //     new IOEntry(
+                //         Seq.with(ItemStack.with()),
+                //         Seq.with(LiquidStack.with(GregLiquids.dio, 100f / 60f ,GregLiquids.oxygen, 100f / 60f)),
+                //         420f / 60f
+                //     ),
+                //     new IOEntry(
+                //         Seq.with(ItemStack.with()),
+                //         Seq.with(LiquidStack.with(GregLiquids.trio, 100f / 60f))
+                //     ), 100f * 60f
+                // ),
+                // new Recipe(
+                //     new IOEntry(
+                //         Seq.with(ItemStack.with()),
+                //         Seq.with(LiquidStack.with(GregLiquids.trio, 125f / 60f ,Liquids.water, 125f / 60f)),
+                //         500f / 60f
+                //     ),
+                //     new IOEntry(
+                //         Seq.with(ItemStack.with()),
+                //         Seq.with(LiquidStack.with(GregLiquids.sulfuric, 125f / 60f))
+                //     ), 8f * 60f
+                // ),
                 new Recipe(
                     new IOEntry(
                         Seq.with(ItemStack.with()),
-                        Seq.with(LiquidStack.with(GregLiquids.dio, 60f / 60f ,GregLiquids.oxygen, 60f / 60f))
-                    ),
-                    new IOEntry(
-                        Seq.with(ItemStack.with()),
-                        Seq.with(LiquidStack.with(GregLiquids.trio, 60f / 60f))
-                    ), 100f * 60f
-                ),
-                new Recipe(
-                    new IOEntry(
-                        Seq.with(ItemStack.with()),
-                        Seq.with(LiquidStack.with(GregLiquids.trio, 60f / 60f ,Liquids.water, 60f / 60f))
-                    ),
-                    new IOEntry(
-                        Seq.with(ItemStack.with()),
-                        Seq.with(LiquidStack.with(GregLiquids.sulfuric, 60f / 60f))
-                    ), 85f * 60f
-                ),
-                new Recipe(
-                    new IOEntry(
-                        Seq.with(ItemStack.with()),
-                        Seq.with(LiquidStack.with(GregLiquids.trio, 60f / 60f, Liquids.water, 60f / 60f))
+                        Seq.with(LiquidStack.with(GregLiquids.sulfuric, 16f / 60f, GregLiquids.ethanol, 16f / 60f)),
+                        7200f / 60f
                     ),
                     new IOEntry(
                         Seq.with(),
-                        Seq.with(LiquidStack.with(GregLiquids.ethy, 60f / 60f))
-                    ), 600f * 60f
+                        Seq.with(LiquidStack.with(GregLiquids.ethy, 16f / 60f))
+                    ), 60f * 60f
                 )
             );
+            powerCapacity = 2048f;
             }};
 }};
