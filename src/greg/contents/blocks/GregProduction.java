@@ -252,36 +252,25 @@ public class GregProduction{
                 new Recipe(
                     new IOEntry(
                         Seq.with(),
-                        Seq.with(LiquidStack.with(GregLiquids.trio, 100f / 60f ,Liquids.water, 100f / 60f)),
-                        420f / 60f
+                        Seq.with(LiquidStack.with(GregLiquids.trio, 125f / 60f ,Liquids.water, 125f / 60f)),
+                        500f / 60f
                     ),
                     new IOEntry(
                         Seq.with(),
-                        Seq.with(LiquidStack.with(GregLiquids.trio, 100f / 60f))
-                    ), 10f * 60f
+                        Seq.with(LiquidStack.with(GregLiquids.sulfuric, 125f / 60f))
+                    ), 8f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(GregLiquids.sulfuric, 16f / 60f, GregLiquids.ethanol, 16f / 60f)),
+                        7200f / 60f
+                    ),
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(GregLiquids.ethy, 16f / 60f))
+                    ), 60f * 60f
                 )
-                // new Recipe(
-                //     new IOEntry(
-                //         Seq.with(),
-                //         Seq.with(LiquidStack.with(GregLiquids.trio, 125f / 60f ,Liquids.water, 125f / 60f)),
-                //         500f / 60f
-                //     ),
-                //     new IOEntry(
-                //         Seq.with(),
-                //         Seq.with(LiquidStack.with(GregLiquids.sulfuric, 125f / 60f))
-                //     ), 8f * 60f
-                // ),
-                // new Recipe(
-                //     new IOEntry(
-                //         Seq.with(),
-                //         Seq.with(LiquidStack.with(GregLiquids.sulfuric, 16f / 60f, GregLiquids.ethanol, 16f / 60f)),
-                //         7200f / 60f
-                //     ),
-                //     new IOEntry(
-                //         Seq.with(),
-                //         Seq.with(LiquidStack.with(GregLiquids.ethy, 16f / 60f))
-                //     ), 60f * 60f
-                // )
             );
             powerCapacity = 2048f;
             }};

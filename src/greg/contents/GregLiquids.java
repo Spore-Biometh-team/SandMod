@@ -52,6 +52,9 @@ public class GregLiquids{
             gasColor = Color.grays(0.9f);
             // alwaysUnlocked = true;
         }};
+        sulfuric = new Liquid("sulfuric", Color.valueOf("ffffff")){{
+            coolant = false;
+        }};
         polyethy = new Liquid("polyethy", Color.valueOf("ffffff")){{
             coolant = false;
             // alwaysUnlocked = true;
