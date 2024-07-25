@@ -43,7 +43,7 @@ import static mindustry.content.Items.*;
 public class GregProduction{
     public static Block
 
-        ID, Furnace, Crafter, Boiler, PDD;
+        ID, Furnace, Crafter, Boiler, PDD, CR;
         public static void load(){
             Furnace = new MultiCrafter("Furnace") {{
             requirements(Category.crafting, with(GregItems.stone, 80));
@@ -208,10 +208,56 @@ public class GregProduction{
             craftTime = 150f;
             size = 2;
             itemCapacity = 50;
-
             consumeItems(with(Items.coal, 10));
             consumeLiquid(GregLiquids.steam, 0.3f);
 
             // drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(), new DrawRegion("-spinner", 3, true), new DrawDefault());
         }};
+            CR = new MultiCrafter("CR") {{
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 450, GregItems.Circuit, 5));
+            // menu = "simple";
+            size = 2;
+            resolvedRecipes = Seq.with(
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with()),
+                        Seq.with(LiquidStack.with(GregLiquids.sulfide, 60f / 60f, GregLiquids.oxygen, 180f / 60f))
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with()),
+                        Seq.with(LiquidStack.with(GregLiquids.dio, 60f / 60f, Liquids.water, 60f / 60f))
+                    ), 30f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with()),
+                        Seq.with(LiquidStack.with(GregLiquids.dio, 60f / 60f ,GregLiquids.oxygen, 60f / 60f))
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with()),
+                        Seq.with(LiquidStack.with(GregLiquids.trio, 60f / 60f))
+                    ), 100f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with()),
+                        Seq.with(LiquidStack.with(GregLiquids.trio, 60f / 60f ,Liquids.water, 60f / 60f))
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with()),
+                        Seq.with(LiquidStack.with(GregLiquids.sulfuric, 60f / 60f))
+                    ), 85f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with()),
+                        Seq.with(LiquidStack.with(GregLiquids.trio, 60f / 60f, Liquids.water, 60f / 60f))
+                    ),
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(GregLiquids.ethy, 60f / 60f))
+                    ), 600f * 60f
+                )
+            );
+            }};
 }};
