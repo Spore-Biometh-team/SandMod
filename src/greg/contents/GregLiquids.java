@@ -47,10 +47,6 @@ public class GregLiquids{
             coolant = false;
             // alwaysUnlocked = true;
         }};
-        ethanol = new Liquid("ethanol", Color.valueOf("ffffff")){{
-            coolant = false;
-            // alwaysUnlocked = true;
-        }};
         ethy = new Liquid("ethy", Color.valueOf("ffffff")){{
             gas = true;
             gasColor = Color.grays(0.9f);
