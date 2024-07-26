@@ -3,7 +3,7 @@ displayName: "Greektech"
 author: "Watermocules"
 description: "Fun have been surgically removed from this mod, now with gregtech level of grinding."
 subtitle: "I always comes back"
-version: "1.00"
+version: "1.0.1"
 minGameVersion: "140"
 main: "greg.greg"
 java: true

@@ -26,7 +26,14 @@ public class GregTechtree {
 
             node(GregProduction.Furnace, () -> {
                 node(GregProduction.Boiler);
-                node(GregProduction.Crafter);
+                node(GregProduction.Crafter, () ->{
+                    node(GregProduction.Brewery, () -> {
+                        node(GregProduction.Distillery);
+                    });
+                    node(GregProduction.CR);
+                    node(GregProduction.Electrolyzer);
+                    node(GregProduction.Solidifier);
+                });
             });
             node(GregTurrets.pduo); 
             });   

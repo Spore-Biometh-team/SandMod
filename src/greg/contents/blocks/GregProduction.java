@@ -170,6 +170,7 @@ public class GregProduction{
                     ), 60f * 60f
                 )
             );
+            researchCostMultiplier = 0.01f;
             }};
         ID = new ItemSource("ID"){{
             requirements(Category.distribution, BuildVisibility.sandboxOnly, with());
@@ -177,8 +178,8 @@ public class GregProduction{
         }};
 
         Boiler = new ConsumeGenerator("Boiler"){{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 55));
-            health = 320;
+            requirements(Category.crafting, with(GregItems.copper, 75, GregItems.lead, 45));
+            health = 450;
             powerProduction = 0f;
             explodeOnFull = true;
             explosionPuddles = 5;
@@ -188,13 +189,13 @@ public class GregProduction{
             hasItems = true;
             hasPower = true;
             consumeEffect = Fx.smeltsmoke;
-            outputLiquid = new LiquidStack(GregLiquids.steam, 12f / 60f);
             liquidCapacity = 600f;
-            size = 2;
+            size = 3;
             drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(Liquids.water), new DrawLiquidTile(GregLiquids.steam){{drawLiquidLight = true;}}, new DrawDefault());
-            consumeItem(Items.coal, 2);
-            consumeLiquid(Liquids.water, 12f / 60f);
-            researchCostMultiplier = 0.05f;
+            consumeItem(Items.coal, 5);
+            consumeLiquid(Liquids.water, 18f / 60f);
+            outputLiquid = new LiquidStack(GregLiquids.steam, 24f / 60f);
+            researchCostMultiplier = 0.01f;
         }};
         PDD = new Separator("PDD"){{
             requirements(Category.production, with(GregItems.copper, 220, GregItems.lead, 175));

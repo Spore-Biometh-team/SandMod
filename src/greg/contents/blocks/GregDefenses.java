@@ -50,7 +50,7 @@ public class GregDefenses{
         public static void load(){
         PEWall = new Wall("PEWall"){{
             requirements(Category.defense, with(GregItems.PES, 5, Items.metaglass, 10));
-            health = 50 * 4;
+            health = 50 * 16;
             insulated = true;
             absorbLasers = true;
             schematicPriority = 10;
@@ -59,7 +59,7 @@ public class GregDefenses{
 
         PEWallLarge = new Wall("PEWallLarge"){{
             requirements(Category.defense, ItemStack.mult(PEWall.requirements, 5));
-            health = 50 * 8;
+            health = 50 * 24;
             size = 2;
             insulated = true;
             absorbLasers = true;

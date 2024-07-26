@@ -56,6 +56,9 @@ public class GregOverride{
             Blocks.hail.requirements(Category.turret, with(GregItems.copper, 75, Items.graphite, 45, GregItems.MS, 1, GregItems.PES, 25));
             Blocks.arc.requirements(Category.turret, with(GregItems.copper, 75, GregItems.lead, 65, GregItems.MS, 1, GregItems.PES, 25));
             Blocks.lancer.requirements(Category.turret, with(GregItems.copper, 225, GregItems.lead, 115, GregItems.titanium, 50, Items.silicon, 115, GregItems.MS, 1, GregItems.PES, 100));
+            Blocks.salvo.requirements(Category.turret, with(GregItems.copper, 225, GregItems.titanium, 75, Items.silicon, 115, GregItems.MS, 1, GregItems.PES, 100));
+            Blocks.parallax.requirements(Category.turret, with(Items.silicon, 120, GregItems.titanium, 175, GregItems.MS, 1, GregItems.PVCS, 100));
+            Blocks.segment.requirements(Category.turret, with(Items.silicon, 275, Items.thorium, 225,  Items.phaseFabric, 80,GregItems.MS, 1, GregItems.PVCS, 100));
             Blocks.mechanicalDrill.requirements(Category.production, with(GregItems.copper, 50));
             Blocks.mechanicalDrill.consumeLiquid(GregLiquids.steam, 6f / 60f);
             Blocks.mechanicalDrill.researchCost = with(GregItems.copper, 5);
@@ -74,14 +77,23 @@ public class GregOverride{
             Blocks.plastaniumWallLarge.requirements(Category.defense, BuildVisibility.sandboxOnly, with());
             Blocks.copperWallLarge.requirements(Category.defense, with(GregItems.copper, 25));
             Blocks.copperWall.requirements(Category.defense, with(GregItems.copper, 5));
+            Blocks.titaniumWallLarge.requirements(Category.defense, with(GregItems.titanium, 25));
+            Blocks.titaniumWall.requirements(Category.defense, with(GregItems.titanium, 5));
             Blocks.combustionGenerator.requirements(Category.power, with(GregItems.copper, 75, GregItems.lead, 60));
+            Blocks.graphitePress.requirements(Category.crafting, with(GregItems.copper, 95, GregItems.lead, 115));  
+            Blocks.siliconSmelter.requirements(Category.crafting, with(GregItems.copper, 95, GregItems.lead, 115));  
             Blocks.duneWall.itemDrop = GregItems.stone;
             Blocks.iceWall.itemDrop = GregItems.Ice;
+            Blocks.basalt.itemDrop = GregItems.stone;
+            Blocks.ice.itemDrop = GregItems.Ice;
             Blocks.whiteTree.itemDrop = GregItems.Resin;
             UnitTypes.alpha.mineWalls = true;
+            UnitTypes.alpha.buildSpeed = 0.1f;
             UnitTypes.alpha.mineTier = 2;
             UnitTypes.beta.mineWalls = true;
+            UnitTypes.alpha.buildSpeed = 0.5f;
             UnitTypes.beta.mineTier = 2;
             UnitTypes.gamma.mineWalls = true;
+            UnitTypes.alpha.buildSpeed = 1.5f;
 
 }};
