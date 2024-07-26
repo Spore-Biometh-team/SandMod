@@ -258,21 +258,6 @@ public class GregProduction{
                     ), 20f * 60f
                 ),
                 new Recipe(
-                    //input
-                    new IOEntry(
-                        //Items
-                        Seq.with(ItemStack.with(GregItems.Iron, 1)),
-                        //Liquids and power
-                        Seq.with(LiquidStack.with(GregLiquids.hcl, 150f / 60f)),
-                        1800f / 60f
-                    ),
-                    //output
-                    new IOEntry(
-                        Seq.with(),
-                        Seq.with(LiquidStack.with(GregLiquids.ironiiicl, 50f / 60f, Liquids.hydrogen, 150f / 60f))
-                    ), 20f * 60f
-                ),
-                new Recipe(
                     new IOEntry(
                         Seq.with(),
                         Seq.with(LiquidStack.with(GregLiquids.dio, 100f / 60f ,GregLiquids.oxygen, 100f / 60f)),
