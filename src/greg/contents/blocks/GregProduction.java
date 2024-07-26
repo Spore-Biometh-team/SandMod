@@ -389,7 +389,7 @@ public class GregProduction{
                 new Recipe(
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.Ice, 5)),
-                        Seq.with(LiquidStack.with(GregLiquids.bio, 77f / 60f)),
+                        Seq.with(LiquidStack.with(GregLiquids.polyethy, 77f / 60f)),
                         420f / 60f
                     ),
                     new IOEntry(
