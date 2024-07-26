@@ -70,8 +70,8 @@ public class GregOverride{
             Blocks.overflowGate.requirements(Category.distribution, with(GregItems.stone, 10));
             Blocks.underflowGate.requirements(Category.distribution, with(GregItems.copper, 5, GregItems.stone, 10));
             Blocks.conveyor.researchCost = with(GregItems.stone, 25);
-            Blocks.plastaniumWall.requirements(Category.defense, with(GregItems.PES, 5, Items.metaglass, 2));
-            Blocks.plastaniumWallLarge.requirements(Category.defense, with(GregItems.PES, 25, Items.metaglass, 50));
+            Blocks.plastaniumWall.requirements(Category.distribution, BuildVisibility.sandboxOnly, with());
+            Blocks.plastaniumWallLarge.requirements(Category.distribution, BuildVisibility.sandboxOnly, with());
             Blocks.copperWallLarge.requirements(Category.defense, with(GregItems.copper, 25));
             Blocks.copperWall.requirements(Category.defense, with(GregItems.copper, 5));
             Blocks.combustionGenerator.requirements(Category.power, with(GregItems.copper, 75, GregItems.lead, 60));
