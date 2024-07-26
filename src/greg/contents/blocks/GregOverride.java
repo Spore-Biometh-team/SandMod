@@ -50,8 +50,6 @@ public class GregOverride{
             //     new UnitPlan(UnitTypes.crawler, 60f * 10, with(Items.silicon, 8, Items.coal, 10)),
             //     new UnitPlan(UnitTypes.nova, 60f * 40, with(Items.silicon, 30, Items.lead, 20, Items.titanium, 20))
             // );
-            Blocks.copperWallLarge.requirements(Category.defense, with(GregItems.copper, 25));
-            Blocks.copperWall.requirements(Category.defense, with(GregItems.copper, 5));
             Blocks.duo.requirements(Category.turret, with(GregItems.copper, 115, GregItems.MS, 1, GregItems.PES, 25));  
             Blocks.scatter.requirements(Category.turret, with(GregItems.copper, 115, GregItems.lead, 250, GregItems.MS, 1, GregItems.PES, 100));
             Blocks.scorch.requirements(Category.turret, with(GregItems.copper, 75, Items.graphite, 45, GregItems.MS, 1, GregItems.PES, 25));
@@ -62,7 +60,8 @@ public class GregOverride{
             Blocks.mechanicalDrill.consumeLiquid(GregLiquids.steam, 6f / 60f);
             Blocks.mechanicalDrill.researchCost = with(GregItems.copper, 5);
             Blocks.pneumaticDrill.requirements(Category.production, with(GregItems.copper, 75, Items.graphite, 25));
-            Blocks.laserDrill.requirements(Category.production, with(GregItems.Circuit, 1, GregItems.copper, 125, GregItems.Silisteel, 75));
+            Blocks.laserDrill.requirements(Category.production, with(GregItems.Circuit, 1, GregItems.titanium, 125, GregItems.Silisteel, 75));
+            Blocks.cultivator.requirements(Category.production, with(GregItems.Circuit, 1, GregItems.copper, 75, GregItems.copper, 75, GregItems.Silisteel, 25));
             Blocks.conveyor.requirements(Category.distribution, with(GregItems.stone, 1));
             Blocks.router.requirements(Category.distribution, with(GregItems.stone, 3));
             Blocks.junction.requirements(Category.distribution, with(GregItems.stone, 2));
@@ -73,6 +72,9 @@ public class GregOverride{
             Blocks.conveyor.researchCost = with(GregItems.stone, 25);
             Blocks.plastaniumWall.requirements(Category.defense, with(GregItems.PES, 5, Items.metaglass, 2));
             Blocks.plastaniumWallLarge.requirements(Category.defense, with(GregItems.PES, 25, Items.metaglass, 50));
+            Blocks.copperWallLarge.requirements(Category.defense, with(GregItems.copper, 25));
+            Blocks.copperWall.requirements(Category.defense, with(GregItems.copper, 5));
+            Blocks.combustionGenerator.requirements(Category.power, with(GregItems.copper, 75, GregItems.lead, 60));
             Blocks.duneWall.itemDrop = GregItems.stone;
             Blocks.iceWall.itemDrop = GregItems.Ice;
             Blocks.whiteTree.itemDrop = GregItems.Resin;

@@ -43,7 +43,7 @@ import static mindustry.content.Items.*;
 public class GregProduction{
     public static Block
 
-        ID, Furnace, Crafter, Boiler, PDD, CR;
+        ID, Furnace, Crafter, Boiler, PDD, CR, Brewery, Distillery, Solidifier, Electrolyzer;
         public static void load(){
             Furnace = new MultiCrafter("Furnace") {{
             requirements(Category.crafting, with(GregItems.stone, 80));
@@ -222,6 +222,10 @@ public class GregProduction{
             hasItems = true;
             hasLiquids = true;
             size = 2;
+            drawer = new DrawMulti(new DrawRegion("-bottom"), 
+            // new DrawLiquidTile(GregLiquids.oxygen), 
+            // new DrawLiquidTile(GregLiquids.dio), 
+            new DrawDefault());
             resolvedRecipes = Seq.with(
                 new Recipe(
                     //input
@@ -237,6 +241,36 @@ public class GregProduction{
                         Seq.with(),
                         Seq.with(LiquidStack.with(GregLiquids.dio, 333f / 60f))
                     ), 3f * 60f
+                ),
+                new Recipe(
+                    //input
+                    new IOEntry(
+                        //Items
+                        Seq.with(ItemStack.with(GregItems.Iron, 1)),
+                        //Liquids and power
+                        Seq.with(LiquidStack.with(GregLiquids.hcl, 150f / 60f)),
+                        1800f / 60f
+                    ),
+                    //output
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(GregLiquids.ironiiicl, 50f / 60f, Liquids.hydrogen, 150f / 60f))
+                    ), 20f * 60f
+                ),
+                new Recipe(
+                    //input
+                    new IOEntry(
+                        //Items
+                        Seq.with(ItemStack.with(GregItems.Iron, 1)),
+                        //Liquids and power
+                        Seq.with(LiquidStack.with(GregLiquids.hcl, 150f / 60f)),
+                        1800f / 60f
+                    ),
+                    //output
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(GregLiquids.ironiiicl, 50f / 60f, Liquids.hydrogen, 150f / 60f))
+                    ), 20f * 60f
                 ),
                 new Recipe(
                     new IOEntry(
@@ -270,6 +304,126 @@ public class GregProduction{
                         Seq.with(),
                         Seq.with(LiquidStack.with(GregLiquids.ethy, 16f / 60f))
                     ), 60f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(GregLiquids.ethy, 18f / 60f, GregLiquids.oxygen, 125f / 60f)),
+                        1800f / 60f
+                    ),
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(GregLiquids.polyethy, 26f / 60f))
+                    ), 8f * 60f
+                )
+            );
+            powerCapacity = 2048f;
+            }};
+            Brewery = new MultiCrafter("Brewery") {{
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 1));
+            menu = "simple";
+            liquidCapacity = 16000f;
+            hasPower = true;
+            hasItems = true;
+            hasLiquids = true;
+            size = 2;
+            drawer = new DrawMulti(new DrawRegion("-bottom"), 
+            // new DrawLiquidTile(GregLiquids.oxygen), 
+            // new DrawLiquidTile(GregLiquids.dio), 
+            new DrawDefault());
+            resolvedRecipes = Seq.with(
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(Items.sporePod, 1)),
+                        Seq.with(),
+                        180f / 60f
+                    ),
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(GregLiquids.bio, 6f / 60f))
+                    ), 3f * 60f
+                )
+            );
+            powerCapacity = 2048f;
+            }};
+            Distillery = new MultiCrafter("Distillery") {{
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 3));
+            menu = "simple";
+            liquidCapacity = 16000f;
+            hasPower = true;
+            hasItems = true;
+            hasLiquids = true;
+            size = 2;
+            drawer = new DrawMulti(new DrawRegion("-bottom"),
+            // new DrawLiquidTile(GregLiquids.oxygen), 
+            // new DrawLiquidTile(GregLiquids.dio), 
+            new DrawDefault());
+            resolvedRecipes = Seq.with(
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(GregLiquids.bio, 333f / 60f)),
+                        120f / 60f
+                    ),
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(GregLiquids.ethanol, 166f / 60f))
+                    ), 3f * 60f
+                )
+            );
+            powerCapacity = 2048f;
+            }};
+            Solidifier = new MultiCrafter("Solidifier") {{
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 2));
+            menu = "simple";
+            liquidCapacity = 16000f;
+            hasPower = true;
+            hasItems = true;
+            hasLiquids = true;
+            size = 2;
+            drawer = new DrawMulti(new DrawRegion("-bottom"),
+            // new DrawLiquidTile(GregLiquids.oxygen), 
+            // new DrawLiquidTile(GregLiquids.dio), 
+            new DrawDefault());
+            resolvedRecipes = Seq.with(
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Ice, 5)),
+                        Seq.with(LiquidStack.with(GregLiquids.bio, 77f / 60f)),
+                        420f / 60f
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.PES, 1)),
+                        Seq.with()
+                    ), 2f * 60f
+                )
+            );
+            powerCapacity = 2048f;
+            }};
+            Electrolyzer = new MultiCrafter("Electrolyzer") {{
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 2));
+            menu = "simple";
+            liquidCapacity = 16000f;
+            fluidOutputDirections = new int[]{2, 4};
+            hasPower = true;
+            hasItems = true;
+            hasLiquids = true;
+            size = 2;
+            drawer = new DrawMulti(new DrawRegion("-bottom"),
+            // new DrawLiquidTile(GregLiquids.oxygen), 
+            // new DrawLiquidTile(GregLiquids.dio), 
+            new DrawDefault());
+            resolvedRecipes = Seq.with(
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(Liquids.water, 13f / 60f)),
+                        1800f / 60f
+                    ),
+                    new IOEntry(
+                        Seq.with(),
+                        Seq.with(LiquidStack.with(GregLiquids.oxygen, 13f / 60f, Liquids.hydrogen, 26f / 60f))
+                    ), 75f * 60f
                 )
             );
             powerCapacity = 2048f;
