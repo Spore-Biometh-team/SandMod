@@ -52,6 +52,6 @@ public class GregDistribution{
             requirements(Category.liquid, with(GregItems.copper, 1));
             health = 15;
             liquidCapacity = 5f;
-            liquidPressure = 0.5f;
+            liquidPressure = 0.75f;
         }};
 }};
