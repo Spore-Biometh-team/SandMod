@@ -84,13 +84,13 @@ public class GregProduction{
                 ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Ice, 5, Items.coal, 1)),
+                        Seq.with(ItemStack.with(GregItems.Ice, 3, Items.coal, 1)),
                         Seq.with()
                     ),
                     new IOEntry(
                         Seq.with(),
-                        Seq.with(LiquidStack.with(Liquids.water, 6f / 60f))
-                    ), 10f * 60f
+                        Seq.with(LiquidStack.with(Liquids.water, 12f / 60f))
+                    ), 8f * 60f
                 ),
                 new Recipe(
                     new IOEntry(
@@ -194,9 +194,9 @@ public class GregProduction{
             ambientSoundVolume = 0.24f;
             liquidCapacity = 600f;
             itemCapacity = 25;
-            itemDuration = 24f;
+            itemDuration = 240f;
             drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(Liquids.water), new DrawLiquidTile(GregLiquids.steam){{drawLiquidLight = true;}}, new DrawDefault());
-            consumeItem(Items.coal, 5);
+            consumeItem(Items.coal, 2);
             consumeLiquid(Liquids.water, 18f / 60f);
             outputLiquid = new LiquidStack(GregLiquids.steam, 24f / 60f);
             researchCostMultiplier = 0.01f;
