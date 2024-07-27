@@ -132,7 +132,7 @@ public class GregProduction{
                 new Recipe(
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.CLG, 2, GregItems.Transistor, 1, GregItems.Pizza, 1)),
-                        Seq.with(LiquidStack.with(GregLiquids.steam, 35f / 60f))
+                        Seq.with(LiquidStack.with(GregLiquids.steam, 36f / 60f))
                     ),
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.MS, 1)),
@@ -180,17 +180,21 @@ public class GregProduction{
         Boiler = new ConsumeGenerator("Boiler"){{
             requirements(Category.crafting, with(GregItems.copper, 75, GregItems.lead, 45));
             health = 450;
+            size = 3;
             powerProduction = 0f;
             explodeOnFull = true;
-            explosionPuddles = 5;
-            explosionPuddleRange = 4f;
+            explosionPuddles = 15;
+            explosionPuddleRange = 8f;
             explosionPuddleLiquid = GregLiquids.steam;
-            explosionPuddleAmount = 20f;
+            explosionPuddleAmount = 50f;
             hasItems = true;
             hasPower = true;
             consumeEffect = Fx.smeltsmoke;
+            ambientSound = Sounds.hum;
+            ambientSoundVolume = 0.24f;
             liquidCapacity = 600f;
-            size = 3;
+            itemCapacity = 25;
+            itemDuration = 24f;
             drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(Liquids.water), new DrawLiquidTile(GregLiquids.steam){{drawLiquidLight = true;}}, new DrawDefault());
             consumeItem(Items.coal, 5);
             consumeLiquid(Liquids.water, 18f / 60f);
@@ -217,12 +221,14 @@ public class GregProduction{
             CR = new MultiCrafter("CR") {{
             requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 450, GregItems.Circuit, 5));
             menu = "simple";
+            health = 450;
+            size = 2;
             liquidCapacity = 16000f;
             fluidOutputDirections = new int[]{2, 4};
             hasPower = true;
             hasItems = true;
             hasLiquids = true;
-            size = 2;
+            
             drawer = new DrawMulti(new DrawRegion("-bottom"), 
             // new DrawLiquidTile(GregLiquids.oxygen), 
             // new DrawLiquidTile(GregLiquids.dio), 
@@ -308,6 +314,8 @@ public class GregProduction{
             Brewery = new MultiCrafter("Brewery") {{
             requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 1));
             menu = "simple";
+            health = 450;
+            size = 2;
             liquidCapacity = 16000f;
             hasPower = true;
             hasItems = true;
@@ -362,6 +370,8 @@ public class GregProduction{
             Solidifier = new MultiCrafter("Solidifier") {{
             requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 2));
             menu = "simple";
+            health = 450;
+            size = 2;
             liquidCapacity = 16000f;
             hasPower = true;
             hasItems = true;
@@ -389,6 +399,8 @@ public class GregProduction{
             Electrolyzer = new MultiCrafter("Electrolyzer") {{
             requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 2));
             menu = "simple";
+            health = 450;
+            size = 2;
             liquidCapacity = 16000f;
             fluidOutputDirections = new int[]{2, 4};
             hasPower = true;

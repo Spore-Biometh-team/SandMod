@@ -22,10 +22,9 @@ import static mindustry.content.SectorPresets.*;
 
 public class GregTechtree {
     public static void load(){
-        nodeRoot("Gregtech", coreShard, false, () -> {
+        nodeRoot("Gregtech", GregProduction.Furnace, false, () -> {
 
-            node(GregProduction.Furnace, () -> {
-                node(GregProduction.Boiler);
+                node(GregProduction.Boiler, () -> {
                 node(GregProduction.Crafter, () ->{
                     node(GregProduction.Brewery, () -> {
                         node(GregProduction.Distillery);
@@ -35,7 +34,15 @@ public class GregTechtree {
                     node(GregProduction.Solidifier);
                 });
             });
-            node(GregTurrets.pduo); 
+            node(GregDistribution.Copperconduit);
+            node(GregTurrets.pduo, () ->{
+                node(GregDefenses.PEWall, () -> {
+                    node(GregDefenses.PEWallLarge);
+                    node(GregDefenses.PVCWall, () -> {
+                        node(GregDefenses.PVCWallLarge);
+                    });
+                });
+            });
             });   
             
     }};

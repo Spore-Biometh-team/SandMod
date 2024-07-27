@@ -8,5 +8,6 @@ public class GregLoader {
         GregOverride.load();
         GregTurrets.load();
         GregProduction.load();
+        GregDistribution.load();
     }
 }
