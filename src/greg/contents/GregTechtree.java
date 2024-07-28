@@ -34,7 +34,11 @@ public class GregTechtree {
                     node(GregProduction.Solidifier);
                 });
             });
-            node(GregDistribution.Copperconduit);
+            node(GregDistribution.Copperconduit, () -> {
+                node(GregDistribution.Copperliquidrouter, () ->{
+                    node(GregDistribution.Copperliquidjunction);
+                });
+            });
             node(GregTurrets.pduo, () ->{
                 node(GregDefenses.PEWall, () -> {
                     node(GregDefenses.PEWallLarge);

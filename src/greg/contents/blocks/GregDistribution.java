@@ -46,12 +46,25 @@ import static mindustry.content.Items.*;
 public class GregDistribution{
     public static Block
 
-        Copperconduit;
+        Copperconduit, Copperliquidrouter, Copperliquidjunction;
         public static void load(){
         Copperconduit = new Conduit("Copperconduit"){{
             requirements(Category.liquid, with(GregItems.copper, 1));
             health = 15;
             liquidCapacity = 5f;
             liquidPressure = 0.75f;
+            solid = false;
+        }};
+        Copperliquidrouter = new LiquidRouter("Copperliquidrouter"){{
+            requirements(Category.liquid, with(GregItems.copper, 5, GregItems.lead , 5));
+            liquidCapacity = 5f;
+            underBullets = true;
+            liquidPressure = 0.75f;
+            solid = false;
+        }};
+
+        Copperliquidjunction = new LiquidJunction("Copperliquidjunction"){{
+            requirements(Category.liquid, with(GregItems.copper, 5, GregItems.lead , 5));
+            solid = false;
         }};
 }};

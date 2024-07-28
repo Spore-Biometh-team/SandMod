@@ -6,7 +6,7 @@ import static mindustry.content.Planets.*;
 
 public class GregSectors{
     public static SectorPreset
-    groundZero;
+    groundZero, fungalPass;
 
 
     public static void load(){
@@ -20,5 +20,9 @@ public class GregSectors{
             noLighting = true;
             startWaveTimeMultiplier = 3f;
         }};
+
+        // fungalPass = new SectorPreset("fungalPass", serpulo, 21){{
+        //     difficulty = 4;
+        // }};
     }
 }
