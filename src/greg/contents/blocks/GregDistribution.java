@@ -46,7 +46,7 @@ import static mindustry.content.Items.*;
 public class GregDistribution{
     public static Block
 
-        Copperconduit, Copperliquidrouter, Copperliquidjunction;
+        Copperconduit, Copperliquidrouter, Copperliquidjunction, Stoneconveyor;
         public static void load(){
         Copperconduit = new Conduit("Copperconduit"){{
             requirements(Category.liquid, with(GregItems.copper, 1));
@@ -66,5 +66,12 @@ public class GregDistribution{
         Copperliquidjunction = new LiquidJunction("Copperliquidjunction"){{
             requirements(Category.liquid, with(GregItems.copper, 5, GregItems.lead , 5));
             solid = false;
+        }};
+        Stoneconveyor = new Conveyor("Stoneconveyor"){{
+            requirements(Category.distribution, with(GregItems.stone, 10));
+            health = 45;
+            speed = 0.003f;
+            displayedSpeed = 2.2f;
+            buildCostMultiplier = 2f;
         }};
 }};

@@ -43,7 +43,7 @@ import static mindustry.content.Items.*;
 public class GregProduction{
     public static Block
 
-        ID, Furnace, Crafter, Boiler, PDD, CR, Brewery, Distillery, Solidifier, Electrolyzer;
+        ID, Furnace, Crafter, Boiler, PDD, CR, Brewery, Distillery, Solidifier, Electrolyzer, PAlloyer;
         public static void load(){
             Furnace = new MultiCrafter("Furnace") {{
             requirements(Category.crafting, with(GregItems.stone, 80));
@@ -111,6 +111,25 @@ public class GregProduction{
                         Seq.with(ItemStack.with(GregItems.Silisteel, 1)),
                         Seq.with()
                     ), 30f * 60f
+                )
+            );
+            }};
+            PAlloyer = new MultiCrafter("PAlloyer") {{
+            requirements(Category.crafting, with(GregItems.copper, 175, GregItems.lead, 50));
+            menu = "simple";
+            researchCostMultiplier = 0.05f;
+            size = 2;
+            drawer = new DrawMulti(new DrawDefault(), new DrawFlame());
+            resolvedRecipes = Seq.with(
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.copper, 6, GregItems.Aluminum, 4, GregItems.Zinc, 4)),
+                        Seq.with(LiquidStack.with(GregLiquids.steam, 12f / 60f))
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Bronze, 1)),
+                        Seq.with()
+                    ), 15f * 60f
                 )
             );
             }};
@@ -219,7 +238,7 @@ public class GregProduction{
             // drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(), new DrawRegion("-spinner", 3, true), new DrawDefault());
         }};
             CR = new MultiCrafter("CR") {{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 450, GregItems.Circuit, 5));
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 450, GregItems.Circuit, 5, GregItems.Silisteel, 24));
             menu = "simple";
             health = 450;
             size = 2;
@@ -312,7 +331,7 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             Brewery = new MultiCrafter("Brewery") {{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 1));
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 1, GregItems.Silisteel, 24));
             menu = "simple";
             health = 450;
             size = 2;
@@ -341,7 +360,7 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             Distillery = new MultiCrafter("Distillery") {{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 3));
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 3, GregItems.Silisteel, 24));
             menu = "simple";
             liquidCapacity = 16000f;
             hasPower = true;
@@ -368,7 +387,7 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             Solidifier = new MultiCrafter("Solidifier") {{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 2));
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 2, GregItems.Silisteel, 24));
             menu = "simple";
             health = 450;
             size = 2;
@@ -397,7 +416,7 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             Electrolyzer = new MultiCrafter("Electrolyzer") {{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 2));
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 2, GregItems.Silisteel, 24));
             menu = "simple";
             health = 450;
             size = 2;

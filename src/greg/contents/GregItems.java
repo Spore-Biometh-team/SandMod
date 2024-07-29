@@ -7,12 +7,18 @@ import mindustry.type.*;
 public class GregItems{
     public static Item
 
-    copper, lead, titanium, stone, Ice, Resin, Iron, rawIron, Silisteel, PES, Circuit, Pizza, Resistor, Transistor, Sulfur, Tube, Vacc, MS ,Buldr, CLG, Diode, Healr, NAND, Mvcircuit,
+    copper, lead, titanium, stone, Ice, Resin, Iron, Zinc, Bronze, Aluminum, rawIron, Silisteel, PES, Circuit, Pizza, Resistor, Transistor, Sulfur, Tube, Vacc, MS ,Buldr, CLG, Diode, Healr, NAND, Mvcircuit,
     PVCS;
     public static void load(){
         rawIron = new Item("rawIron", Color.valueOf("d99d73")){{
         }};
         Iron = new Item("Iron", Color.valueOf("d99d73")){{
+        }};
+        Aluminum = new Item("Aluminum", Color.valueOf("74cbdb")){{
+        }};
+        Zinc = new Item("Zinc", Color.valueOf("d2c1b4")){{
+        }};
+        Bronze = new Item("Bronze", Color.valueOf("d2c1b4")){{
         }};
         Resin = new Item("Resin", Color.valueOf("b26512")){{
             hardness = 1;
