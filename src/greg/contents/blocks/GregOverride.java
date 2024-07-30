@@ -50,7 +50,7 @@ public class GregOverride{
             //     new UnitPlan(UnitTypes.crawler, 60f * 10, with(Items.silicon, 8, Items.coal, 10)),
             //     new UnitPlan(UnitTypes.nova, 60f * 40, with(Items.silicon, 30, Items.lead, 20, Items.titanium, 20))
             // );
-            Blocks.duo.requirements(Category.turret, with(GregItems.copper, 115, GregItems.MS, 1, GregItems.PES, 25));  
+            Blocks.duo.requirements(Category.turret, with(GregItems.copper, 115, GregItems.MS, 1, GregItems.PES, 25));
             Blocks.scatter.requirements(Category.turret, with(GregItems.copper, 115, GregItems.lead, 250, GregItems.MS, 1, GregItems.PES, 100));
             Blocks.scorch.requirements(Category.turret, with(GregItems.copper, 75, Items.graphite, 45, GregItems.MS, 1, GregItems.PES, 25));
             Blocks.hail.requirements(Category.turret, with(GregItems.copper, 75, Items.graphite, 45, GregItems.MS, 1, GregItems.PES, 25));
@@ -60,12 +60,14 @@ public class GregOverride{
             Blocks.parallax.requirements(Category.turret, with(Items.silicon, 120, GregItems.titanium, 175, GregItems.MS, 1, GregItems.PVCS, 100));
             Blocks.segment.requirements(Category.turret, with(Items.silicon, 275, Items.thorium, 225,  Items.phaseFabric, 80,GregItems.MS, 1, GregItems.PVCS, 100));
             Blocks.mechanicalDrill.requirements(Category.production, with(GregItems.copper, 50));
-            Blocks.mechanicalDrill.consumeLiquid(GregLiquids.steam, 3f / 60f);
+            Blocks.mechanicalDrill.consumeLiquid(GregLiquids.steam, 2f / 60f);
             Blocks.mechanicalDrill.researchCost = with(GregItems.copper, 5);
             Blocks.pneumaticDrill.requirements(Category.production, with(GregItems.copper, 75, Items.graphite, 25));
             Blocks.laserDrill.requirements(Category.production, with(GregItems.Circuit, 1, GregItems.titanium, 125, GregItems.Silisteel, 75));
-            Blocks.cultivator.requirements(Category.production, with(GregItems.Circuit, 1, GregItems.copper, 75, GregItems.copper, 75, GregItems.Silisteel, 25));
+            Blocks.cultivator.requirements(Category.production, with(GregItems.Circuit, 1, GregItems.copper, 75, GregItems.lead, 75, GregItems.Silisteel, 25));
             Blocks.conveyor.requirements(Category.distribution, with(GregItems.Bronze, 1));
+            Blocks.itemBridge.requirements(Category.distribution, with(GregItems.Bronze, 15));
+            Blocks.distributor.requirements(Category.distribution, with(GregItems.Bronze, 25));
             Blocks.router.requirements(Category.distribution, with(GregItems.Bronze, 5));
             Blocks.junction.requirements(Category.distribution, with(GregItems.Bronze, 5));
             Blocks.sorter.requirements(Category.distribution, with(GregItems.Bronze, 25));
@@ -81,7 +83,8 @@ public class GregOverride{
             Blocks.titaniumWall.requirements(Category.defense, with(GregItems.titanium, 5));
             Blocks.combustionGenerator.requirements(Category.power, with(GregItems.copper, 75, GregItems.lead, 60));
             Blocks.graphitePress.requirements(Category.crafting, with(GregItems.copper, 95, GregItems.lead, 115));  
-            Blocks.siliconSmelter.requirements(Category.crafting, with(GregItems.copper, 95, GregItems.lead, 115));  
+            Blocks.siliconSmelter.requirements(Category.crafting, with(GregItems.copper, 95, GregItems.lead, 115)); 
+            Blocks.coreShard.requirements(Category.effect, BuildVisibility.editorOnly, with(GregItems.copper, 1000, GregItems.lead, 800));
             Blocks.duneWall.itemDrop = GregItems.stone;
             Blocks.iceWall.itemDrop = GregItems.Ice;
             Blocks.basalt.itemDrop = GregItems.stone;
