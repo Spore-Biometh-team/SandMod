@@ -70,7 +70,7 @@ public class GregDistribution{
         Stoneconveyor = new Conveyor("Stoneconveyor"){{
             requirements(Category.distribution, with(GregItems.stone, 10));
             health = 45;
-            speed = 0.003f;
+            speed = 0.005f;
             displayedSpeed = 2.2f;
             buildCostMultiplier = 2f;
         }};
