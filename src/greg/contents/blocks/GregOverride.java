@@ -75,8 +75,11 @@ public class GregOverride{
             Blocks.overflowGate.requirements(Category.distribution, with(GregItems.Bronze, 25));
             Blocks.underflowGate.requirements(Category.distribution, with(GregItems.Bronze, 25));
             Blocks.conveyor.researchCost = with(GregItems.Bronze, 25);
-            Blocks.plastaniumWall.requirements(Category.defense, BuildVisibility.sandboxOnly, with());
-            Blocks.plastaniumWallLarge.requirements(Category.defense, BuildVisibility.sandboxOnly, with());
+            Blocks.plastaniumWall.requirements(Category.defense, BuildVisibility.editorOnly, with());
+            Blocks.plastaniumWallLarge.requirements(Category.defense, BuildVisibility.editorOnly, with());
+            Blocks.airFactory.requirements(Category.defense, BuildVisibility.editorOnly, with());
+            Blocks.groundFactory.requirements(Category.defense, BuildVisibility.editorOnly, with());
+            Blocks.navalFactory.requirements(Category.defense, BuildVisibility.editorOnly, with());
             Blocks.copperWallLarge.requirements(Category.defense, with(GregItems.copper, 25));
             Blocks.copperWall.requirements(Category.defense, with(GregItems.copper, 5));
             Blocks.titaniumWallLarge.requirements(Category.defense, with(GregItems.titanium, 25));

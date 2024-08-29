@@ -9,5 +9,6 @@ public class GregLoader {
         GregTurrets.load();
         GregProduction.load();
         GregDistribution.load();
+        GregUnitFactory.load();
     }
 }
