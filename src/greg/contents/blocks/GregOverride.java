@@ -98,5 +98,6 @@ public class GregOverride{
             UnitTypes.beta.mineTier = 2;
             UnitTypes.gamma.mineWalls = true;
             UnitTypes.gamma.buildSpeed = 1.5f;
+            UnitTypes.mono.buildSpeed = 0.05f;
 
 }};

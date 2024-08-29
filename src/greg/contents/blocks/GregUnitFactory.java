@@ -30,8 +30,8 @@ public class GregUnitFactory{
             requirements(Category.units, with(Items.copper, 50, Items.lead, 120, Items.silicon, 80));
             plans = Seq.with(
                 new UnitPlan(UnitTypes.dagger, 60f * 15, with(GregItems.Silisteel, 15, GregItems.Circuit, 1, GregItems.MS, 1)),
-                new UnitPlan(UnitTypes.crawler, 60f * 10, with(GregItems.Silisteel, 15, GregItems.Circuit, 1, GregItems.MS, 1)),
-                new UnitPlan(UnitTypes.nova, 60f * 40, with(GregItems.Silisteel, 15, GregItems.Circuit, 1, GregItems.MS, 1))
+                new UnitPlan(UnitTypes.crawler, 60f * 10, with(GregItems.Silisteel, 5, GregItems.Circuit, 1, GregItems.MS, 1, Items.pyratite, 15)),
+                new UnitPlan(UnitTypes.nova, 60f * 40, with(GregItems.Silisteel, 20, GregItems.Circuit, 1, GregItems.MS, 1, GregItems.Healr, 1, GregItems.Buldr, 1))
             );
             size = 3;
             consumePower(1.2f);
@@ -39,9 +39,9 @@ public class GregUnitFactory{
         airFactory= new UnitFactory("ground-factory"){{
             requirements(Category.units, with(Items.copper, 50, Items.lead, 120, Items.silicon, 80));
             plans = Seq.with(
-                new UnitPlan(UnitTypes.dagger, 60f * 15, with(GregItems.Silisteel, 15, GregItems.Circuit, 1, GregItems.MS, 1)),
-                new UnitPlan(UnitTypes.crawler, 60f * 10, with(GregItems.Silisteel, 15, GregItems.Circuit, 1, GregItems.MS, 1)),
-                new UnitPlan(UnitTypes.nova, 60f * 40, with(GregItems.Silisteel, 15, GregItems.Circuit, 1, GregItems.MS, 1))
+                new UnitPlan(UnitTypes.mono, 60f * 15, with(GregItems.Silisteel, 15, GregItems.Circuit, 1, GregItems.MS, 1, GregItems.Buldr, 1)),
+                new UnitPlan(UnitTypes.flare, 60f * 10, with(GregItems.Silisteel, 5, GregItems.Circuit, 1, GregItems.MS, 1)),
+                new UnitPlan(UnitTypes.alpha, 60f * 40, with(GregItems.Silisteel, 35, GregItems.Circuit, 1, GregItems.MS, 1, GregItems.Buldr, 1))
             );
             size = 3;
             consumePower(1.2f);
