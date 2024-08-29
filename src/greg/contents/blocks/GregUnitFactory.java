@@ -26,7 +26,7 @@ public class GregUnitFactory{
         groundFactory, airFactory, navalFactory;
 
         public static void load(){
-        groundFactory = new UnitFactory("ground-factory"){{
+        groundFactory = new UnitFactory("groundFactory"){{
             requirements(Category.units, with(Items.copper, 50, Items.lead, 120, Items.silicon, 80));
             plans = Seq.with(
                 new UnitPlan(UnitTypes.dagger, 60f * 15, with(GregItems.Silisteel, 15, GregItems.Circuit, 1, GregItems.MS, 1)),
@@ -36,7 +36,7 @@ public class GregUnitFactory{
             size = 3;
             consumePower(1.2f);
         }};
-        airFactory= new UnitFactory("ground-factory"){{
+        airFactory= new UnitFactory("airFactory"){{
             requirements(Category.units, with(Items.copper, 50, Items.lead, 120, Items.silicon, 80));
             plans = Seq.with(
                 new UnitPlan(UnitTypes.mono, 60f * 15, with(GregItems.Silisteel, 15, GregItems.Circuit, 1, GregItems.MS, 1, GregItems.Buldr, 1)),
@@ -46,7 +46,7 @@ public class GregUnitFactory{
             size = 3;
             consumePower(1.2f);
         }};
-        navalFactory = new UnitFactory("ground-factory"){{
+        navalFactory = new UnitFactory("navalFactory"){{
             requirements(Category.units, with(Items.copper, 50, Items.lead, 120, Items.silicon, 80));
             plans = Seq.with(
                 new UnitPlan(UnitTypes.dagger, 60f * 15, with(GregItems.Silisteel, 15, GregItems.Circuit, 1, GregItems.MS, 1)),
