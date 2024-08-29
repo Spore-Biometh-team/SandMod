@@ -23,13 +23,15 @@ import static mindustry.content.SectorPresets.*;
 public class GregTechtree {
     public static void load(){
         nodeRoot("Gregtech", GregProduction.Furnace, false, () -> {
-
+                node(GregProduction.PAlloyer);
                 node(GregProduction.Boiler, () -> {
                 node(GregProduction.Crafter, () ->{
                     node(GregProduction.Brewery, () -> {
                         node(GregProduction.Distillery);
                     });
                     node(GregProduction.CR);
+                    node(GregProduction.Assembler);
+                    node(GregProduction.Circuitassembler);
                     node(GregProduction.Electrolyzer);
                     node(GregProduction.Solidifier);
                 });
