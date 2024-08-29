@@ -101,16 +101,6 @@ public class GregProduction{
                         Seq.with(ItemStack.with(GregItems.Tube, 6)),
                         Seq.with()
                     ), 60f * 60f
-                ),
-                new Recipe(
-                    new IOEntry(
-                        Seq.with(ItemStack.with(Items.silicon, 3, GregItems.Iron, 5)),
-                        Seq.with()
-                    ),
-                    new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Silisteel, 1)),
-                        Seq.with()
-                    ), 30f * 60f
                 )
             );
             }};
@@ -130,6 +120,16 @@ public class GregProduction{
                         Seq.with(ItemStack.with(GregItems.Bronze, 1)),
                         Seq.with()
                     ), 15f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(Items.silicon, 3, GregItems.Iron, 5)),
+                        Seq.with(LiquidStack.with(GregLiquids.steam, 12f / 60f))
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Silisteel, 1)),
+                        Seq.with()
+                    ), 30f * 60f
                 )
             );
             }};
@@ -483,7 +483,7 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             Assembler = new MultiCrafter("Assembler") {{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.MVCircuit, 2, GregItems.Silisteel, 24));
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 2, GregItems.Silisteel, 24));
             menu = "simple";
             health = 450;
             size = 2;
