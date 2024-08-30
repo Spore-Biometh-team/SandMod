@@ -93,6 +93,32 @@ public class GregOverride{
             Blocks.basalt.itemDrop = GregItems.stone;
             Blocks.ice.itemDrop = GregItems.Ice;
             Blocks.whiteTree.itemDrop = GregItems.Resin;
+            UnitTypes.crawler.weapons.add(new Weapon("Crawlmegadeath"){{
+                shootOnDeath = true;
+                reload = 24f;
+                shootCone = 180f;
+                ejectEffect = Fx.none;
+                shootSound = Sounds.explosion;
+                x = shootY = 0f;
+                mirror = false;
+                bullet = new BulletType(){{
+                    collidesTiles = false;
+                    collides = false;
+                    hitSound = Sounds.explosion;
+                    incendChance = 100f;
+                    incendSpread = 50f;
+                    incendAmount = 100;
+                    rangeOverride = 30f;
+                    hitEffect = Fx.pulverize;
+                    speed = 0f;
+                    splashDamageRadius = 95f;
+                    instantDisappear = true;
+                    splashDamage = 900f;
+                    killShooter = true;
+                    hittable = false;
+                    collidesAir = true;
+                }};
+            }});
             UnitTypes.alpha.mineWalls = true;
             UnitTypes.alpha.buildSpeed = 0.1f;
             UnitTypes.alpha.mineTier = 2;
