@@ -43,7 +43,8 @@ import static mindustry.content.Items.*;
 public class GregProduction{
     public static Block
 
-        ID, Furnace, Crafter, Boiler, PDD, CR, Brewery, Distillery, Solidifier, Electrolyzer, PAlloyer, Circuitassembler, Assembler;
+        ID, Furnace, Crafter, Boiler, PDD, CR, Brewery, Distillery, Solidifier, MVSolidifier, Electrolyzer, PAlloyer, Circuitassembler, Assembler, ThermalCentrifuge, ElectricFurnace,
+        LVConstructor;
         public static void load(){
             Furnace = new MultiCrafter("Furnace") {{
             requirements(Category.crafting, with(GregItems.stone, 80));
@@ -186,7 +187,17 @@ public class GregProduction{
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.Circuit, 1)),
                         Seq.with()
-                    ), 60f * 60f
+                    ), 30f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Diode, 2, GregItems.Pizza, 1, GregItems.Silisteel, 1, GregItems.Resistor, 2, GregItems.Circuit, 3)),
+                        Seq.with(LiquidStack.with(GregLiquids.steam, 32f / 60f))
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.MVCircuit, 1)),
+                        Seq.with()
+                    ), 45f * 60f
                 )
             );
             researchCostMultiplier = 0.01f;
@@ -411,17 +422,6 @@ public class GregProduction{
                         Seq.with(ItemStack.with(GregItems.PES, 1)),
                         Seq.with()
                     ), 2f * 60f
-                ),
-                new Recipe(
-                    new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Ice, 5)),
-                        Seq.with(LiquidStack.with(GregLiquids.pvcl, 77f / 60f)),
-                        420f / 60f
-                    ),
-                    new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.PVCS, 1)),
-                        Seq.with()
-                    ), 2f * 60f
                 )
             );
             powerCapacity = 2048f;
@@ -462,7 +462,6 @@ public class GregProduction{
             health = 450;
             size = 2;
             liquidCapacity = 16000f;
-            fluidOutputDirections = new int[]{2, 4};
             hasPower = true;
             hasItems = true;
             hasLiquids = true;
@@ -483,12 +482,11 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             Assembler = new MultiCrafter("Assembler") {{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 2, GregItems.Silisteel, 24));
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 6, GregItems.Silisteel, 24));
             menu = "simple";
             health = 450;
             size = 2;
             liquidCapacity = 16000f;
-            fluidOutputDirections = new int[]{2, 4};
             hasPower = true;
             hasItems = true;
             hasLiquids = true;
@@ -502,6 +500,17 @@ public class GregProduction{
                     ),
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.Resistor, 4)),
+                        Seq.with()
+                    ), 15f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.copper, 4, GregItems.dustGallium, 1,Items.metaglass, 2)),
+                        Seq.with(),
+                        1800f / 60f
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Diode, 16)),
                         Seq.with()
                     ), 15f * 60f
                 ),
@@ -540,16 +549,123 @@ public class GregProduction{
                 ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Silisteel, 10, GregItems.Aluminum, 1)),
+                        Seq.with(ItemStack.with(GregItems.Silisteel, 1, GregItems.Aluminum, 1)),
                         Seq.with(LiquidStack.with(GregLiquids.polyethy, 36f / 60f)),
                         1800f / 60f
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Transistor, 1)),
+                        Seq.with(ItemStack.with(GregItems.Transistor, 8)),
                         Seq.with()
                     ), 4f * 60f
                 )
             );
             powerCapacity = 2048f;
             }};
+            MVSolidifier = new MultiCrafter("MVSolidifier") {{
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.MVCircuit, 2, GregItems.Aluminum, 24));
+            menu = "simple";
+            health = 450;
+            size = 2;
+            placeablePlayer = false;
+            liquidCapacity = 16000f;
+            hasPower = true;
+            hasItems = true;
+            hasLiquids = true;
+            size = 2;
+            drawer = new DrawMulti(new DrawRegion("-bottom"),
+            // new DrawLiquidTile(GregLiquids.oxygen), 
+            // new DrawLiquidTile(GregLiquids.dio), 
+            new DrawDefault());
+            resolvedRecipes = Seq.with(
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Ice, 5)),
+                        Seq.with(LiquidStack.with(GregLiquids.polyethy, 77f / 60f)),
+                        420f / 60f
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.PES, 1)),
+                        Seq.with()
+                    ), 2f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Ice, 5)),
+                        Seq.with(LiquidStack.with(GregLiquids.pvcl, 77f / 60f)),
+                        420f / 60f
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.PVCS, 1)),
+                        Seq.with()
+                    ), 2f * 60f
+                )
+            );
+            powerCapacity = 2048f;
+            }};
+            ThermalCentrifuge = new MultiCrafter("ThermalCentrifuge") {{
+            requirements(Category.crafting, with(GregItems.copper, 450, GregItems.lead, 350, GregItems.Circuit, 4, GregItems.Silisteel, 24));
+            menu = "simple";
+            health = 450;
+            size = 2;
+            hasPower = true;
+            hasItems = true;
+            size = 2;
+            resolvedRecipes = Seq.with(
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Bauxite, 64)),
+                        Seq.with(),
+                        1800f / 60f
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.dustAluminum, 32, GregItems.dustGallium, 1)),
+                        Seq.with()
+                    ), 270f * 60f
+                )
+            );
+            powerCapacity = 2048f;
+            }};
+            ElectricFurnace = new MultiCrafter("ElectricFurnace") {{
+            requirements(Category.crafting, with(GregItems.copper, 450, GregItems.lead, 350, GregItems.Circuit, 4, GregItems.Silisteel, 24));
+            menu = "simple";
+            health = 450;
+            size = 2;
+            hasPower = true;
+            hasItems = true;
+            size = 2;
+            resolvedRecipes = Seq.with(
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.dustAluminum, 1)),
+                        Seq.with(),
+                        1800f / 60f
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Aluminum, 1)),
+                        Seq.with()
+                    ), 10f * 60f
+                ),
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.dustGallium, 1)),
+                        Seq.with(),
+                        1800f / 60f
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(GregItems.Gallium, 1)),
+                        Seq.with()
+                    ), 10f * 60f
+                )
+            );
+            powerCapacity = 2048f;
+            }};
+            LVConstructor = new Constructor("LVConstructor"){{
+            requirements(Category.units, with(GregItems.copper, 450, GregItems.lead, 350, GregItems.MVCircuit, 4, GregItems.Silisteel, 24));
+            regionSuffix = "-dark";
+            hasPower = true;
+            buildSpeed = 0.6f;
+            consumePower(2f);
+            size = 3;
+            filter = Seq.with(GregProduction.MVSolidifier);
+        }};
 }};
