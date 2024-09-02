@@ -182,7 +182,7 @@ public class GregProduction{
                 new Recipe(
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.lead, 5, GregItems.Pizza, 1, GregItems.Silisteel, 1, GregItems.Resistor, 2, GregItems.Vacc, 2)),
-                        Seq.with(LiquidStack.with(GregLiquids.steam, 12f / 60f))
+                        Seq.with(LiquidStack.with(GregLiquids.steam, 32f / 60f))
                     ),
                     new IOEntry(
                         Seq.with(ItemStack.with(GregItems.Circuit, 1)),
@@ -245,6 +245,22 @@ public class GregProduction{
             itemCapacity = 50;
             consumeItems(with(Items.coal, 10));
             consumeLiquid(GregLiquids.steam, 0.3f);
+
+            // drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(), new DrawRegion("-spinner", 3, true), new DrawDefault());
+        }};
+        EDD = new Separator("PDD"){{
+            requirements(Category.production, with(GregItems.copper, 220, GregItems.lead, 175));
+            results = with(
+                GregItems.rawIron, 1,
+                Items.titanium, 1,
+                Items.lead, 2,
+                Items.copper, 2
+            );
+            hasPower = true;
+            craftTime = 150f;
+            size = 2;
+            itemCapacity = 50;
+            consumePower(2f);
 
             // drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(), new DrawRegion("-spinner", 3, true), new DrawDefault());
         }};
