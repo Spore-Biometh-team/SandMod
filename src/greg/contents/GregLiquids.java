@@ -1,7 +1,6 @@
 package greg.contents;
 
 import arc.graphics.*;
-import arc.struct.*;
 import mindustry.type.*;
 
 public class GregLiquids{

@@ -1,33 +1,13 @@
 package greg.contents.blocks;
 
 import arc.struct.Seq;
-import mindustry.entities.bullet.*;
-import mindustry.entities.effect.*;
-import mindustry.entities.part.DrawPart.*;
-import mindustry.entities.part.*;
-import mindustry.entities.pattern.*;
 import mindustry.gen.*;
-import mindustry.graphics.*;
 import mindustry.type.*;
-import mindustry.type.unit.*;
 import mindustry.world.*;
-import mindustry.world.blocks.*;
-import mindustry.world.blocks.campaign.*;
-import mindustry.world.blocks.defense.*;
-import mindustry.world.blocks.defense.turrets.*;
-import mindustry.world.blocks.distribution.*;
-import mindustry.world.blocks.environment.*;
-import mindustry.world.blocks.heat.*;
-import mindustry.world.blocks.legacy.*;
-import mindustry.world.blocks.liquid.*;
-import mindustry.world.blocks.logic.*;
 import mindustry.world.blocks.payloads.*;
 import mindustry.world.blocks.power.*;
 import mindustry.world.blocks.production.*;
 import mindustry.world.blocks.sandbox.*;
-import mindustry.world.blocks.storage.*;
-import mindustry.world.blocks.units.*;
-import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 import mindustry.content.*;
@@ -35,10 +15,7 @@ import greg.contents.*;
 import multicraft.*;
 
 
-import static mindustry.Vars.*;
 import static mindustry.type.ItemStack.*;
-import static mindustry.content.Items.*;
-
 
 public class GregProduction{
     public static Block
@@ -248,22 +225,22 @@ public class GregProduction{
 
             // drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(), new DrawRegion("-spinner", 3, true), new DrawDefault());
         }};
-        EDD = new Separator("PDD"){{
-            requirements(Category.production, with(GregItems.copper, 220, GregItems.lead, 175));
-            results = with(
-                GregItems.rawIron, 1,
-                Items.titanium, 1,
-                Items.lead, 2,
-                Items.copper, 2
-            );
-            hasPower = true;
-            craftTime = 150f;
-            size = 2;
-            itemCapacity = 50;
-            consumePower(2f);
+        // EDD = new Separator("EDD"){{
+        //     requirements(Category.production, with(GregItems.copper, 220, GregItems.lead, 175));
+        //     results = with(
+        //         GregItems.rawIron, 1,
+        //         Items.titanium, 1,
+        //         Items.lead, 2,
+        //         Items.copper, 2
+        //     );
+        //     hasPower = true;
+        //     craftTime = 150f;
+        //     size = 2;
+        //     itemCapacity = 50;
+        //     consumePower(2f);
 
-            // drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(), new DrawRegion("-spinner", 3, true), new DrawDefault());
-        }};
+        //     // drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(), new DrawRegion("-spinner", 3, true), new DrawDefault());
+        // }};
             CR = new MultiCrafter("CR") {{
             requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 450, GregItems.Circuit, 5, GregItems.Silisteel, 24));
             menu = "simple";
