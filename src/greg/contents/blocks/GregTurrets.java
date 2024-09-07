@@ -3,20 +3,22 @@ package greg.contents.blocks;
 import mindustry.entities.bullet.*;
 import mindustry.entities.part.*;
 import mindustry.entities.pattern.*;
+import mindustry.gen.Sounds;
 import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.defense.turrets.*;
 import mindustry.world.draw.*;
-import mindustry.content.Fx;
+import mindustry.world.meta.Env;
 import mindustry.content.*;
 import greg.contents.*;
 
 import static mindustry.type.ItemStack.*;
 
+
 public class GregTurrets{
     public static Block
 
-        pduo;
+        pduo, Groundshaker;
         public static void load(){
         pduo = new ItemTurret("pduo"){{
             requirements(Category.turret, with(GregItems.copper, 35));
@@ -64,6 +66,50 @@ public class GregTurrets{
             researchCostMultiplier = 0.05f;
             //tf is this!?!?!
             // limitRange();
+        }};
+    
+        Groundshaker = new ItemTurret("Groundshaker"){{
+            requirements(Category.turret, with(GregItems.copper, 1125, GregItems.titanium, 725, GregItems.Schizo, 800));
+
+            reload = 35f;
+            shake = 4f;
+            range = 90f;
+            recoil = 5f;
+
+            shoot = new ShootSpread(3, 20f);
+
+            shootCone = 30;
+            size = 3;
+            envEnabled |= Env.space;
+
+            scaledHealth = 220;
+            shootSound = Sounds.shotgun;
+            coolant = consumeCoolant(0.3f);
+
+            float brange = range + 10f;
+
+            ammo(
+                GregItems.Schizo, new ShrapnelBulletType(){{
+                    length = brange;
+                    damage = 66f;
+                    ammoMultiplier = 1f;
+                    width = 17f;
+                    reloadMultiplier = 1.3f;
+                    fragBullets = 3;
+                    fragBullet = new BasicBulletType(3f, 1){{
+                        fragBullets = 10;
+                        damage = 1f;
+                        width = 17f;
+                        height = 15f;
+                        fragBullet = new ShrapnelBulletType(){{
+                            fragBullets = 10;
+                            length = brange;
+                            damage = 100f;
+                            width = 17f;
+                        }};
+                    }};
+                }}
+            );
         }};
 
         }};

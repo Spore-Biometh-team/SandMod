@@ -7,7 +7,7 @@ public class GregItems{
     public static Item
 
     copper, lead, titanium, Bauxite, Gallium, stone, Ice, Resin, Iron, Zinc, Bronze, Aluminum, rawIron, dustAluminum, dustGallium, Silisteel, PES, Circuit, Pizza, Resistor, Transistor, Sulfur, Tube, Vacc, MS ,Buldr, CLG, Diode, Healr, NAND, MVCircuit,
-    PVCS;
+    PVCS, Schizo;
     public static void load(){
         rawIron = new Item("rawIron", Color.valueOf("d99d73")){{
         }};
@@ -74,6 +74,8 @@ public class GregItems{
         }};
         Gallium = new Item("Gallium", Color.valueOf("cbcbcb")){{
         }};
-        dustAluminum = new Item("dustAluminum", Color.valueOf("74cbdb")){{
+        dustAluminum = new Item("dustAluminum", Color.valueOf("4a4040")){{
+        }};
+        Schizo = new Item("Schizo", Color.valueOf("74cbdb")){{
         }};
 }};
