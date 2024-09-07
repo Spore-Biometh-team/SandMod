@@ -72,7 +72,7 @@ public class GregTurrets{
             requirements(Category.turret, with(GregItems.copper, 1125, GregItems.titanium, 725, GregItems.Schizo, 800));
 
             reload = 35f;
-            shake = 4f;
+            shake = 6f;
             range = 90f;
             recoil = 5f;
 
@@ -91,21 +91,23 @@ public class GregTurrets{
             ammo(
                 GregItems.Schizo, new ShrapnelBulletType(){{
                     length = brange;
-                    damage = 66f;
+                    damage = 225f;
                     ammoMultiplier = 1f;
                     width = 17f;
                     reloadMultiplier = 1.3f;
                     fragBullets = 3;
+                    shootEffect = smokeEffect = GregFX.schizoShoot;
                     fragBullet = new BasicBulletType(3f, 1){{
                         fragBullets = 10;
                         damage = 1f;
                         width = 17f;
                         height = 15f;
+                        smokeEffect = GregFX.schizoShoot;
                         fragBullet = new ShrapnelBulletType(){{
-                            fragBullets = 10;
                             length = brange;
                             damage = 100f;
                             width = 17f;
+                            smokeEffect = GregFX.schizoShoot;
                         }};
                     }};
                 }}
