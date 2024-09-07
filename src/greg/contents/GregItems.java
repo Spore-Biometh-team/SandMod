@@ -17,7 +17,7 @@ public class GregItems{
         }};
         Zinc = new Item("Zinc", Color.valueOf("d2c1b4")){{
         }};
-        Bronze = new Item("Bronze", Color.valueOf("d2c1b4")){{
+        Bronze = new Item("Bronze", Color.valueOf("e5955c")){{
         }};
         Resin = new Item("Resin", Color.valueOf("b26512")){{
             hardness = 1;
@@ -34,19 +34,23 @@ public class GregItems{
         }};
         titanium = new Item("titanium", Color.valueOf("8da1e3")){{
         }};
-        Circuit = new Item("Circuit", Color.valueOf("245485")){{
+        NAND = new Item("NAND", Color.valueOf("505050")){{
+        }};
+        Circuit = new Item("Circuit", Color.valueOf("505050")){{
+        }};
+        MVCircuit = new Item("MVCircuit", Color.valueOf("505050")){{
         }};
         MS = new Item("MS", Color.valueOf("6abe30")){{
         }};
-        Silisteel = new Item("Silisteel", Color.valueOf("245485")){{
+        Silisteel = new Item("Silisteel", Color.valueOf("5a5a5a")){{
         }};
         Pizza = new Item("Pizza", Color.valueOf("b26512")){{
         }};
         Transistor = new Item("Transistor", Color.valueOf("3e3b2f")){{
         }};
-        Resistor = new Item("Resistor", Color.valueOf("245485")){{
+        Resistor = new Item("Resistor", Color.valueOf("d3a67c")){{
         }};
-        Sulfur = new Item("Sulfur", Color.valueOf("245485")){{
+        Sulfur = new Item("Sulfur", Color.valueOf("cfbd2f")){{
         }};
         Tube = new Item("Tube", Color.valueOf("ebeef5")){{
         }};
@@ -54,17 +58,13 @@ public class GregItems{
         }};
         PES = new Item("PES", Color.valueOf("ffffff")){{
         }};
-        Buldr = new Item("Buldr", Color.valueOf("245485")){{
+        Buldr = new Item("Buldr", Color.valueOf("ffbc00")){{
         }};
         CLG = new Item("CLG", Color.valueOf("ebeef5")){{
         }};
-        Diode = new Item("Diode", Color.valueOf("245485")){{
+        Diode = new Item("Diode", Color.valueOf("efeee5")){{
         }};
-        Healr = new Item("Healr", Color.valueOf("245485")){{
-        }};
-        NAND = new Item("NAND", Color.valueOf("245485")){{
-        }};
-        MVCircuit = new Item("MVCircuit", Color.valueOf("245485")){{
+        Healr = new Item("Healr", Color.valueOf("84f491")){{
         }};
         PVCS = new Item("PVCS", Color.valueOf("245485")){{
         }};
