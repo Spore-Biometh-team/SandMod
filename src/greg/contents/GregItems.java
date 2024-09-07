@@ -76,6 +76,6 @@ public class GregItems{
         }};
         dustAluminum = new Item("dustAluminum", Color.valueOf("4a4040")){{
         }};
-        Schizo = new Item("Schizo", Color.valueOf("74cbdb")){{
+        Schizo = new Item("Schizo", Color.valueOf("4a4040")){{
         }};
 }};
