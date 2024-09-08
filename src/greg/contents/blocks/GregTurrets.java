@@ -1,5 +1,6 @@
 package greg.contents.blocks;
 
+import arc.graphics.*;
 import mindustry.entities.bullet.*;
 import mindustry.entities.part.*;
 import mindustry.entities.pattern.*;
@@ -11,6 +12,7 @@ import mindustry.world.draw.*;
 import mindustry.world.meta.Env;
 import mindustry.content.*;
 import greg.contents.*;
+
 
 import static mindustry.type.ItemStack.*;
 
@@ -97,17 +99,20 @@ public class GregTurrets{
                     reloadMultiplier = 1.3f;
                     fragBullets = 3;
                     shootEffect = smokeEffect = GregFX.schizoShoot;
+                    toColor = Color.valueOf("4a4040");
                     fragBullet = new BasicBulletType(3f, 1){{
                         fragBullets = 10;
                         damage = 1f;
                         width = 17f;
                         height = 15f;
                         smokeEffect = GregFX.schizoShoot;
+                        toColor = Color.valueOf("4a4040");
                         fragBullet = new ShrapnelBulletType(){{
                             length = brange;
                             damage = 100f;
                             width = 17f;
                             smokeEffect = GregFX.schizoShoot;
+                            toColor = Color.valueOf("4a4040");
                         }};
                     }};
                 }}
