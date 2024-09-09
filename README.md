@@ -8,4 +8,5 @@ Revamped some map to be a little bit more difficult, Example such as: Ground zer
 [![GitHub Release](https://img.shields.io/github/v/release/Spore-Biometh-team/SandMod?include_prereleases&style=for-the-badge&logo=github&logoColor=a&labelColor=808080&color=ffd37f)](https://github.com/Spore-Biometh-team/SandMod/releases) 
 
 ### List of contributors:
-i tinpordt for the new boiler sprite
+- i tinpordt for the new boiler sprite
+- twcashew for item sprites
