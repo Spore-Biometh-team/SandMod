@@ -64,6 +64,12 @@ public class GregOverride{
             Blocks.iceWall.itemDrop = GregItems.ice;
             Blocks.basalt.itemDrop = GregItems.stone;
             Blocks.ice.itemDrop = GregItems.ice;
+            Blocks.deepwater.attributes.set(GregWater.truewater, 0.3f);
+            Blocks.water.attributes.set(GregWater.truewater, 0.15f);
+            Blocks.taintedWater.attributes.set(GregWater.truewater, 0.3f);
+            Blocks.deepTaintedWater.attributes.set(GregWater.truewater, 0.15f);
+            Blocks.sandWater.attributes.set(GregWater.truewater, 0.15f);
+            Blocks.darksandWater.attributes.set(GregWater.truewater, 0.15f);
             Blocks.whiteTree.itemDrop = GregItems.resin;
             UnitTypes.crawler.weapons.add(new Weapon("Crawlmegadeath"){{
                 shootOnDeath = true;

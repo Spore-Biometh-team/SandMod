@@ -1,5 +1,6 @@
 package greg.contents.blocks;
 
+import arc.graphics.Color;
 import arc.struct.Seq;
 import mindustry.gen.*;
 import mindustry.type.*;
@@ -21,7 +22,7 @@ public class GregProduction{
     public static Block
 
         ID, Furnace, Crafter, Boiler, PDD, CR, Brewery, Distillery, Solidifier, MVSolidifier, Electrolyzer, PAlloyer, Circuitassembler, Assembler, ThermalCentrifuge, ElectricFurnace,
-        LVConstructor;
+        LVConstructor, gerbFisher;
         public static void load(){
             Furnace = new MultiCrafter("Furnace") {{
             requirements(Category.crafting, with(GregItems.stone, 80));
@@ -660,5 +661,30 @@ public class GregProduction{
             consumePower(2f);
             size = 3;
             filter = Seq.with(GregProduction.MVSolidifier);
+
+            gerbFisher = new AttributeCrafter("gerbFisher"){{
+                requirements(Category.production, with(Items.copper, 25, Items.lead, 25, Items.silicon, 10));
+                outputItem = new ItemStack(GregItems.gerbe, 1);
+                craftTime = 100;
+                size = 2;
+                hasLiquids = true;
+                hasPower = true;
+                hasItems = true;
+
+                craftEffect = Fx.none;
+                attribute = GregWater.truewater;
+
+                maxBoost = 2f;
+                new DrawParticles(){{
+                    color = Color.valueOf("d4f0ff");
+                    alpha = 0.6f;
+                    particleSize = 4f;
+                    particles = 10;
+                    particleRad = 12f;
+                    particleLife = 140f;
+                }};
+                consumePower(80f / 60f);
+                consumeLiquid(Liquids.water, 18f / 60f);
+            }};
         }};
 }};
