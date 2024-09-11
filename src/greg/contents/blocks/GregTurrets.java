@@ -71,7 +71,7 @@ public class GregTurrets{
         }};
     
         Groundshaker = new ItemTurret("Groundshaker"){{
-            requirements(Category.turret, with(GregItems.copper, 1125, GregItems.titanium, 725, GregItems.Schizo, 800));
+            requirements(Category.turret, with(GregItems.copper, 1125, GregItems.titanium, 725, GregItems.schizo, 800));
 
             reload = 35f;
             shake = 6f;
@@ -91,7 +91,7 @@ public class GregTurrets{
             float brange = range + 10f;
 
             ammo(
-                GregItems.Schizo, new ShrapnelBulletType(){{
+                GregItems.schizo, new ShrapnelBulletType(){{
                     length = brange;
                     damage = 225f;
                     ammoMultiplier = 1f;

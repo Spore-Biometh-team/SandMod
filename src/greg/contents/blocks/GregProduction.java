@@ -46,7 +46,7 @@ public class GregProduction{
                         Seq.with()
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Iron, 1)),
+                        Seq.with(ItemStack.with(GregItems.iron, 1)),
                         Seq.with()
                     ), 60f * 60f
                 ),
@@ -62,7 +62,7 @@ public class GregProduction{
                 ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Ice, 3, Items.coal, 1)),
+                        Seq.with(ItemStack.with(GregItems.ice, 3, Items.coal, 1)),
                         Seq.with()
                     ),
                     new IOEntry(
@@ -76,7 +76,7 @@ public class GregProduction{
                         Seq.with()
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Tube, 6)),
+                        Seq.with(ItemStack.with(GregItems.tube, 6)),
                         Seq.with()
                     ), 60f * 60f
                 )
@@ -91,21 +91,21 @@ public class GregProduction{
             resolvedRecipes = Seq.with(
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.copper, 6, GregItems.Aluminum, 4, GregItems.Zinc, 4)),
+                        Seq.with(ItemStack.with(GregItems.copper, 6, GregItems.aluminum, 4, GregItems.zinc, 4)),
                         Seq.with(LiquidStack.with(GregLiquids.steam, 12f / 60f))
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Bronze, 1)),
+                        Seq.with(ItemStack.with(GregItems.bronze, 1)),
                         Seq.with()
                     ), 15f * 60f
                 ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(Items.silicon, 3, GregItems.Iron, 5)),
+                        Seq.with(ItemStack.with(Items.silicon, 3, GregItems.iron, 5)),
                         Seq.with(LiquidStack.with(GregLiquids.steam, 12f / 60f))
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Silisteel, 1)),
+                        Seq.with(ItemStack.with(GregItems.silisteel, 1)),
                         Seq.with()
                     ), 30f * 60f
                 )
@@ -122,13 +122,13 @@ public class GregProduction{
                         Seq.with(LiquidStack.with(GregLiquids.steam, 12f / 60f))
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Resistor, 3)),
+                        Seq.with(ItemStack.with(GregItems.resistor, 3)),
                         Seq.with()
                     ), 15f * 60f
                 ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.CLG, 2, GregItems.Transistor, 1, GregItems.Pizza, 1)),
+                        Seq.with(ItemStack.with(GregItems.CLG, 2, GregItems.transistor, 1, GregItems.pizza, 1)),
                         Seq.with(LiquidStack.with(GregLiquids.steam, 36f / 60f))
                     ),
                     new IOEntry(
@@ -138,41 +138,41 @@ public class GregProduction{
                 ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.copper, 9, GregItems.Tube, 1, GregItems.Silisteel, 1)),
+                        Seq.with(ItemStack.with(GregItems.copper, 9, GregItems.tube, 1, GregItems.silisteel, 1)),
                         Seq.with(LiquidStack.with(GregLiquids.steam, 12f / 60f))
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Vacc, 1)),
+                        Seq.with(ItemStack.with(GregItems.vacc, 1)),
                         Seq.with()
                     ), 10f * 60f
                 ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.copper, 20, GregItems.Resin, 9)),
+                        Seq.with(ItemStack.with(GregItems.copper, 20, GregItems.resin, 9)),
                         Seq.with(LiquidStack.with(GregLiquids.steam, 12f / 60f))
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Pizza, 1)),
+                        Seq.with(ItemStack.with(GregItems.pizza, 1)),
                         Seq.with()
                     ), 25f * 60f
                 ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.lead, 5, GregItems.Pizza, 1, GregItems.Silisteel, 1, GregItems.Resistor, 2, GregItems.Vacc, 2)),
+                        Seq.with(ItemStack.with(GregItems.lead, 5, GregItems.pizza, 1, GregItems.silisteel, 1, GregItems.resistor, 2, GregItems.vacc, 2)),
                         Seq.with(LiquidStack.with(GregLiquids.steam, 32f / 60f))
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Circuit, 1)),
+                        Seq.with(ItemStack.with(GregItems.circuit, 1)),
                         Seq.with()
                     ), 30f * 60f
                 ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Diode, 2, GregItems.Pizza, 1, GregItems.Silisteel, 1, GregItems.Resistor, 2, GregItems.Circuit, 3)),
+                        Seq.with(ItemStack.with(GregItems.diode, 2, GregItems.pizza, 1, GregItems.silisteel, 1, GregItems.resistor, 2, GregItems.circuit, 3)),
                         Seq.with(LiquidStack.with(GregLiquids.steam, 32f / 60f))
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.MVCircuit, 1)),
+                        Seq.with(ItemStack.with(GregItems.MVcircuit, 1)),
                         Seq.with()
                     ), 45f * 60f
                 )
@@ -242,7 +242,7 @@ public class GregProduction{
         //     // drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(), new DrawRegion("-spinner", 3, true), new DrawDefault());
         // }};
             CR = new MultiCrafter("CR") {{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 450, GregItems.Circuit, 5, GregItems.Silisteel, 24));
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 450, GregItems.circuit, 5, GregItems.silisteel, 24));
             menu = "simple";
             health = 450;
             size = 2;
@@ -261,7 +261,7 @@ public class GregProduction{
                     //input
                     new IOEntry(
                         //Items
-                        Seq.with(ItemStack.with(GregItems.Sulfur, 1)),
+                        Seq.with(ItemStack.with(GregItems.sulfur, 1)),
                         //Liquids and power
                         Seq.with(LiquidStack.with(GregLiquids.oxygen, 666f / 60f)),
                         420f / 60f
@@ -276,7 +276,7 @@ public class GregProduction{
                     //input
                     new IOEntry(
                         //Items
-                        Seq.with(ItemStack.with(GregItems.Iron, 1)),
+                        Seq.with(ItemStack.with(GregItems.iron, 1)),
                         //Liquids and power
                         Seq.with(LiquidStack.with(GregLiquids.hcl, 150f / 60f)),
                         1800f / 60f
@@ -335,7 +335,7 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             Brewery = new MultiCrafter("Brewery") {{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 1, GregItems.Silisteel, 24));
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.circuit, 1, GregItems.silisteel, 24));
             menu = "simple";
             health = 450;
             size = 2;
@@ -364,7 +364,7 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             Distillery = new MultiCrafter("Distillery") {{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 3, GregItems.Silisteel, 24));
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.circuit, 3, GregItems.silisteel, 24));
             menu = "simple";
             liquidCapacity = 16000f;
             hasPower = true;
@@ -391,7 +391,7 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             Solidifier = new MultiCrafter("Solidifier") {{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 2, GregItems.Silisteel, 24));
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.circuit, 2, GregItems.silisteel, 24));
             menu = "simple";
             health = 450;
             size = 2;
@@ -407,7 +407,7 @@ public class GregProduction{
             resolvedRecipes = Seq.with(
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Ice, 5)),
+                        Seq.with(ItemStack.with(GregItems.ice, 5)),
                         Seq.with(LiquidStack.with(GregLiquids.polyethy, 77f / 60f)),
                         420f / 60f
                     ),
@@ -420,7 +420,7 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             Electrolyzer = new MultiCrafter("Electrolyzer") {{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 2, GregItems.Silisteel, 24));
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.circuit, 2, GregItems.silisteel, 24));
             menu = "simple";
             health = 450;
             size = 2;
@@ -450,7 +450,7 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             Circuitassembler = new MultiCrafter("Circuitassembler") {{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.MVCircuit, 2, GregItems.Silisteel, 24));
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.MVcircuit, 2, GregItems.silisteel, 24));
             menu = "simple";
             health = 450;
             size = 2;
@@ -462,12 +462,12 @@ public class GregProduction{
             resolvedRecipes = Seq.with(
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.lead, 2, GregItems.Pizza, 1, GregItems.Silisteel, 1, GregItems.Resistor, 2, GregItems.Vacc, 1)),
+                        Seq.with(ItemStack.with(GregItems.lead, 2, GregItems.pizza, 1, GregItems.silisteel, 1, GregItems.resistor, 2, GregItems.vacc, 1)),
                         Seq.with(),
                         1800f / 60f
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Circuit, 1)),
+                        Seq.with(ItemStack.with(GregItems.circuit, 1)),
                         Seq.with()
                     ), 45f * 60f
                 )
@@ -475,7 +475,7 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             Assembler = new MultiCrafter("Assembler") {{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.Circuit, 6, GregItems.Silisteel, 24));
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.circuit, 6, GregItems.silisteel, 24));
             menu = "simple";
             health = 450;
             size = 2;
@@ -492,7 +492,7 @@ public class GregProduction{
                         1800f / 60f
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Resistor, 4)),
+                        Seq.with(ItemStack.with(GregItems.resistor, 4)),
                         Seq.with()
                     ), 15f * 60f
                 ),
@@ -503,13 +503,13 @@ public class GregProduction{
                         1800f / 60f
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Diode, 16)),
+                        Seq.with(ItemStack.with(GregItems.diode, 16)),
                         Seq.with()
                     ), 15f * 60f
                 ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.CLG, 2, GregItems.Transistor, 1, GregItems.Pizza, 1)),
+                        Seq.with(ItemStack.with(GregItems.CLG, 2, GregItems.transistor, 1, GregItems.pizza, 1)),
                         Seq.with(),
                         1800f / 60f
                     ),
@@ -520,34 +520,34 @@ public class GregProduction{
                 ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.copper, 4, GregItems.Tube, 9, GregItems.Silisteel, 4)),
+                        Seq.with(ItemStack.with(GregItems.copper, 4, GregItems.tube, 9, GregItems.silisteel, 4)),
                         Seq.with(),
                         1800f / 60f
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Vacc, 9)),
+                        Seq.with(ItemStack.with(GregItems.vacc, 9)),
                         Seq.with()
                     ), 10f * 60f
                 ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.copper, 10, GregItems.Resin, 9)),
+                        Seq.with(ItemStack.with(GregItems.copper, 10, GregItems.resin, 9)),
                         Seq.with(),
                         1800f / 60f
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Pizza, 1)),
+                        Seq.with(ItemStack.with(GregItems.pizza, 1)),
                         Seq.with()
                     ), 25f * 60f
                 ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Silisteel, 1, GregItems.Aluminum, 1)),
+                        Seq.with(ItemStack.with(GregItems.silisteel, 1, GregItems.aluminum, 1)),
                         Seq.with(LiquidStack.with(GregLiquids.polyethy, 36f / 60f)),
                         1800f / 60f
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Transistor, 8)),
+                        Seq.with(ItemStack.with(GregItems.transistor, 8)),
                         Seq.with()
                     ), 4f * 60f
                 )
@@ -555,7 +555,7 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             MVSolidifier = new MultiCrafter("MVSolidifier") {{
-            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.MVCircuit, 2, GregItems.Aluminum, 24));
+            requirements(Category.crafting, with(GregItems.copper, 150, GregItems.lead, 150, GregItems.MVcircuit, 2, GregItems.aluminum, 24));
             menu = "simple";
             health = 450;
             size = 2;
@@ -572,7 +572,7 @@ public class GregProduction{
             resolvedRecipes = Seq.with(
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Ice, 5)),
+                        Seq.with(ItemStack.with(GregItems.ice, 5)),
                         Seq.with(LiquidStack.with(GregLiquids.polyethy, 77f / 60f)),
                         420f / 60f
                     ),
@@ -583,7 +583,7 @@ public class GregProduction{
                 ),
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Ice, 5)),
+                        Seq.with(ItemStack.with(GregItems.ice, 5)),
                         Seq.with(LiquidStack.with(GregLiquids.pvcl, 77f / 60f)),
                         420f / 60f
                     ),
@@ -596,7 +596,7 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             ThermalCentrifuge = new MultiCrafter("ThermalCentrifuge") {{
-            requirements(Category.crafting, with(GregItems.copper, 450, GregItems.lead, 350, GregItems.Circuit, 4, GregItems.Silisteel, 24));
+            requirements(Category.crafting, with(GregItems.copper, 450, GregItems.lead, 350, GregItems.circuit, 4, GregItems.silisteel, 24));
             menu = "simple";
             health = 450;
             size = 2;
@@ -606,7 +606,7 @@ public class GregProduction{
             resolvedRecipes = Seq.with(
                 new Recipe(
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Bauxite, 64)),
+                        Seq.with(ItemStack.with(GregItems.bauxite, 64)),
                         Seq.with(),
                         1800f / 60f
                     ),
@@ -619,7 +619,7 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             ElectricFurnace = new MultiCrafter("ElectricFurnace") {{
-            requirements(Category.crafting, with(GregItems.copper, 450, GregItems.lead, 350, GregItems.Circuit, 4, GregItems.Silisteel, 24));
+            requirements(Category.crafting, with(GregItems.copper, 450, GregItems.lead, 350, GregItems.circuit, 4, GregItems.silisteel, 24));
             menu = "simple";
             health = 450;
             size = 2;
@@ -634,7 +634,7 @@ public class GregProduction{
                         1800f / 60f
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Aluminum, 1)),
+                        Seq.with(ItemStack.with(GregItems.aluminum, 1)),
                         Seq.with()
                     ), 10f * 60f
                 ),
@@ -645,7 +645,7 @@ public class GregProduction{
                         1800f / 60f
                     ),
                     new IOEntry(
-                        Seq.with(ItemStack.with(GregItems.Gallium, 1)),
+                        Seq.with(ItemStack.with(GregItems.gallium, 1)),
                         Seq.with()
                     ), 10f * 60f
                 )
@@ -653,7 +653,7 @@ public class GregProduction{
             powerCapacity = 2048f;
             }};
             LVConstructor = new Constructor("LVConstructor"){{
-            requirements(Category.units, with(GregItems.copper, 450, GregItems.lead, 350, GregItems.MVCircuit, 4, GregItems.Silisteel, 24));
+            requirements(Category.units, with(GregItems.copper, 450, GregItems.lead, 350, GregItems.MVcircuit, 4, GregItems.silisteel, 24));
             regionSuffix = "-dark";
             hasPower = true;
             buildSpeed = 0.6f;
