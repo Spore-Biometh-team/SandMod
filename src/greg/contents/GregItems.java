@@ -6,23 +6,25 @@ import mindustry.type.*;
 public class GregItems{
     public static Item
 
-    copper, lead, titanium, Bauxite, Gallium, stone, Ice, Resin, Iron, Zinc, Bronze, Aluminum, rawIron, dustAluminum, dustGallium, Silisteel, PES, Circuit, Pizza, Resistor, Transistor, Sulfur, Tube, Vacc, MS ,Buldr, CLG, Diode, Healr, NAND, MVCircuit,
-    PVCS, Schizo;
+    copper, lead, titanium, bauxite, gallium, stone, ice, resin, iron, zinc,
+    bronze, aluminum, rawIron, dustAluminum, dustGallium, silisteel, PES,
+    circuit, pizza, resistor, transistor, sulfur, tube, vacc, MS ,buldr, CLG, diode, healr,
+    NAND, MVcircuit, PVCS, schizo, gerbe;
     public static void load(){
         rawIron = new Item("rawIron", Color.valueOf("d99d73")){{
         }};
-        Iron = new Item("Iron", Color.valueOf("d99d73")){{
+        iron = new Item("iron", Color.valueOf("d99d73")){{
         }};
-        Aluminum = new Item("Aluminum", Color.valueOf("74cbdb")){{
+        aluminum = new Item("aluminum", Color.valueOf("74cbdb")){{
         }};
-        Zinc = new Item("Zinc", Color.valueOf("d2c1b4")){{
+        zinc = new Item("zinc", Color.valueOf("d2c1b4")){{
         }};
-        Bronze = new Item("Bronze", Color.valueOf("e5955c")){{
+        bronze = new Item("bronze", Color.valueOf("e5955c")){{
         }};
-        Resin = new Item("Resin", Color.valueOf("b26512")){{
+        resin = new Item("resin", Color.valueOf("b26512")){{
             hardness = 1;
         }};
-        Ice = new Item("Ice", Color.valueOf("99ddec")){{
+        ice = new Item("ice", Color.valueOf("99ddec")){{
             hardness = 1;
         }};
         stone = new Item("stone", Color.valueOf("918e85")){{
@@ -36,46 +38,48 @@ public class GregItems{
         }};
         NAND = new Item("NAND", Color.valueOf("505050")){{
         }};
-        Circuit = new Item("Circuit", Color.valueOf("505050")){{
+        circuit = new Item("Circuit", Color.valueOf("505050")){{
         }};
-        MVCircuit = new Item("MVCircuit", Color.valueOf("505050")){{
+        MVcircuit = new Item("MVCircuit", Color.valueOf("505050")){{
         }};
         MS = new Item("MS", Color.valueOf("6abe30")){{
         }};
-        Silisteel = new Item("Silisteel", Color.valueOf("5a5a5a")){{
+        silisteel = new Item("silisteel", Color.valueOf("5a5a5a")){{
         }};
-        Pizza = new Item("Pizza", Color.valueOf("b26512")){{
+        pizza = new Item("pizza", Color.valueOf("b26512")){{
         }};
-        Transistor = new Item("Transistor", Color.valueOf("3e3b2f")){{
+        transistor = new Item("Transistor", Color.valueOf("3e3b2f")){{
         }};
-        Resistor = new Item("Resistor", Color.valueOf("d3a67c")){{
+        resistor = new Item("Resistor", Color.valueOf("d3a67c")){{
         }};
-        Sulfur = new Item("Sulfur", Color.valueOf("cfbd2f")){{
+        sulfur = new Item("Sulfur", Color.valueOf("cfbd2f")){{
         }};
-        Tube = new Item("Tube", Color.valueOf("ebeef5")){{
+        tube = new Item("Tube", Color.valueOf("ebeef5")){{
         }};
-        Vacc = new Item("Vacc", Color.valueOf("ebeef5")){{
+        vacc = new Item("Vacc", Color.valueOf("ebeef5")){{
         }};
         PES = new Item("PES", Color.valueOf("ffffff")){{
         }};
-        Buldr = new Item("Buldr", Color.valueOf("ffbc00")){{
+        buldr = new Item("Buldr", Color.valueOf("ffbc00")){{
         }};
         CLG = new Item("CLG", Color.valueOf("ebeef5")){{
         }};
-        Diode = new Item("Diode", Color.valueOf("efeee5")){{
+        diode = new Item("Diode", Color.valueOf("efeee5")){{
         }};
-        Healr = new Item("Healr", Color.valueOf("84f491")){{
+        healr = new Item("Healr", Color.valueOf("84f491")){{
         }};
         PVCS = new Item("PVCS", Color.valueOf("245485")){{
         }};
-        Bauxite = new Item("Bauxite", Color.valueOf("9a554a")){{
+        bauxite = new Item("bauxite", Color.valueOf("9a554a")){{
         }};
         dustGallium = new Item("dustGallium", Color.valueOf("cbcbcb")){{
         }};
-        Gallium = new Item("Gallium", Color.valueOf("cbcbcb")){{
+        gallium = new Item("Gallium", Color.valueOf("cbcbcb")){{
         }};
         dustAluminum = new Item("dustAluminum", Color.valueOf("4a4040")){{
         }};
-        Schizo = new Item("Schizo", Color.valueOf("4a4040")){{
+        schizo = new Item("schizo", Color.valueOf("4a4040")){{
+        }};
+        gerbe = new Item("gerbe", Color.valueOf("65d453")){{
         }};
 }};
