@@ -19,6 +19,7 @@ public class greg extends Mod{
     @Override
     public void loadContent(){
         Log.info("IM BOUT TA GREG");
+        GregWater.load();
         GregItems.load();
         GregLiquids.load();
         GregLoader.load();
