@@ -2,6 +2,8 @@ package greg.contents.blocks;
 
 import arc.graphics.Color;
 import arc.struct.Seq;
+import mindustry.entities.Effect;
+import mindustry.entities.effect.ParticleEffect;
 import mindustry.gen.*;
 import mindustry.type.*;
 import mindustry.world.*;
@@ -626,7 +628,6 @@ public class GregProduction{
             size = 2;
             hasPower = true;
             hasItems = true;
-            size = 2;
             resolvedRecipes = Seq.with(
                 new Recipe(
                     new IOEntry(
@@ -666,25 +667,25 @@ public class GregProduction{
                 requirements(Category.production, with(Items.copper, 25, Items.lead, 25, Items.silicon, 10));
                 outputItem = new ItemStack(GregItems.gerbe, 1);
                 craftTime = 100;
-                size = 2;
-                hasLiquids = true;
+                size = 3;
                 hasPower = true;
                 hasItems = true;
 
-                craftEffect = Fx.none;
                 attribute = GregWater.truewater;
+                placeableLiquid = true;
 
-                maxBoost = 2f;
-                new DrawParticles(){{
-                    color = Color.valueOf("d4f0ff");
-                    alpha = 0.6f;
-                    particleSize = 4f;
-                    particles = 10;
-                    particleRad = 12f;
-                    particleLife = 140f;
+                craftEffect = new ParticleEffect(){{
+                    particles = 4;
+                    length = 10f;
+                    lifetime = 120f;
+                    spin = 2f;
+                    sizeFrom = 5f;
+                    sizeTo = 0f;
+                    layer = 80f;
+                    region = "gerbe";
                 }};
+                maxBoost = 2f;
                 consumePower(80f / 60f);
-                consumeLiquid(Liquids.water, 18f / 60f);
             }};
         }};
 }};
