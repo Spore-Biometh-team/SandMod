@@ -673,7 +673,8 @@ public class GregProduction{
 
                 attribute = GregWater.truewater;
                 placeableLiquid = true;
-
+                minEfficiency = 9f - 0.0001f;
+                baseEfficiency = 0f;
                 craftEffect = new ParticleEffect(){{
                     particles = 4;
                     length = 10f;
