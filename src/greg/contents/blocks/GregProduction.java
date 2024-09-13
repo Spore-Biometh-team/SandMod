@@ -685,7 +685,7 @@ public class GregProduction{
                     region = "sand-gerbe";
                 }};
                 maxBoost = 2f;
-                consumePower(80f / 60f);
+                consumePower(120f / 60f);
             }};
         }};
 }};
