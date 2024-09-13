@@ -682,7 +682,7 @@ public class GregProduction{
                     sizeFrom = 5f;
                     sizeTo = 0f;
                     layer = 80f;
-                    region = "gerbe";
+                    region = "sand-gerbe";
                 }};
                 maxBoost = 2f;
                 consumePower(80f / 60f);
