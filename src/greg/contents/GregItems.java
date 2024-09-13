@@ -38,9 +38,9 @@ public class GregItems{
         }};
         NAND = new Item("NAND", Color.valueOf("505050")){{
         }};
-        circuit = new Item("Circuit", Color.valueOf("505050")){{
+        circuit = new Item("circuit", Color.valueOf("505050")){{
         }};
-        MVcircuit = new Item("MVCircuit", Color.valueOf("505050")){{
+        MVcircuit = new Item("MVcircuit", Color.valueOf("505050")){{
         }};
         MS = new Item("MS", Color.valueOf("6abe30")){{
         }};
@@ -48,25 +48,25 @@ public class GregItems{
         }};
         pizza = new Item("pizza", Color.valueOf("b26512")){{
         }};
-        transistor = new Item("Transistor", Color.valueOf("3e3b2f")){{
+        transistor = new Item("transistor", Color.valueOf("3e3b2f")){{
         }};
-        resistor = new Item("Resistor", Color.valueOf("d3a67c")){{
+        resistor = new Item("resistor", Color.valueOf("d3a67c")){{
         }};
-        sulfur = new Item("Sulfur", Color.valueOf("cfbd2f")){{
+        sulfur = new Item("sulfur", Color.valueOf("cfbd2f")){{
         }};
-        tube = new Item("Tube", Color.valueOf("ebeef5")){{
+        tube = new Item("tube", Color.valueOf("ebeef5")){{
         }};
-        vacc = new Item("Vacc", Color.valueOf("ebeef5")){{
+        vacc = new Item("vacc", Color.valueOf("ebeef5")){{
         }};
         PES = new Item("PES", Color.valueOf("ffffff")){{
         }};
-        buldr = new Item("Buldr", Color.valueOf("ffbc00")){{
+        buldr = new Item("buldr", Color.valueOf("ffbc00")){{
         }};
         CLG = new Item("CLG", Color.valueOf("ebeef5")){{
         }};
-        diode = new Item("Diode", Color.valueOf("efeee5")){{
+        diode = new Item("diode", Color.valueOf("efeee5")){{
         }};
-        healr = new Item("Healr", Color.valueOf("84f491")){{
+        healr = new Item("healr", Color.valueOf("84f491")){{
         }};
         PVCS = new Item("PVCS", Color.valueOf("245485")){{
         }};
@@ -74,7 +74,7 @@ public class GregItems{
         }};
         dustGallium = new Item("dustGallium", Color.valueOf("cbcbcb")){{
         }};
-        gallium = new Item("Gallium", Color.valueOf("cbcbcb")){{
+        gallium = new Item("gallium", Color.valueOf("cbcbcb")){{
         }};
         dustAluminum = new Item("dustAluminum", Color.valueOf("4a4040")){{
         }};
