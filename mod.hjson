@@ -4,7 +4,7 @@ author: "Watermocules"
 description: 'Based on the hit minecraft mod "Gregtech", this mod attempt to add some realism into the game as well as making the game more grindy \n Currently work in progress, some item may be uncraftable and some block doesnt have sprite.'
 subtitle: "I always comes back"
 version: "1.0.2"
-minGameVersion: "140"
+minGameVersion: "148"
 main: "greg.greg"
 java: true
 repo: Spore-Biometh-team/SandMod
